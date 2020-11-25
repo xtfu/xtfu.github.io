@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Xiaoting FU 符晓婷 <We are the dust of stars> </title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#research">research</a></li>
+            <li><a class="smoothscroll" href="#publication">publications and presentations</a></li>
+            <li><a class="smoothscroll" href="#about">CV</a></li>
+            <li><a class="smoothscroll" href="outreach">outreach</a></li>
+            <li><a href="https://www.flickr.com/photos/fuxiaoting" target="_blank">as a photographer</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">Xiaoting FU <font size = +2> ( 符晓婷 ) </font></h1>
+            <h3><font color=grey>We are the dust of stars</font></h3>
+            <h3>   <br>
+                <font size=+1><font color=white>Welcome! I'm a third year Ph.D. student in Astrophysics sector of 
+                <a href="http://www.sissa.it" target="_blank">SISSA</a> 
+               (International School for Advanced Studies). </font></h3>
+         <div class="one columns">
+
+            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+
+         </div>
+
+            <p class="address">
+                     <span>   </span><br>
+                     <span>SISSA,<br>
+                           via Bonomea 265</span><br>
+                     <span>34146, Trieste, Italy<span><br>
+                     <span>Earth <br>
+                            Local Universe</span><br>
+                     <span> <a href="mailto:xtfu@sissa.it">xtfu@sissa.it</a> </span>
+                                           </p>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#research"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+   <!-- research Section
+   ================================================== -->
+   <section id="research">
+
+      <div class="row">
+
+         <div class="three columns">
+            <img class="profile-pic"  src="images/xtfu2015.jpg" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+		    <h2><font color = orange><font size=+3>Research interests</font></font></h2>
+			<h3><font color = white> Stellar Evolution </font></h3>
+			<p> I'm working on stellar evolution with my supervisor in SISSA <a href="http://people.sissa.it/~sbressan/" target="_blank">Prof. Alessandro Bressan</a>              			
+			   </P>
+			   
+			   <h3><font color = white> Lithium evolution in metal-poor stars </font></h3>
+			   <p> <a href="http://adsabs.harvard.edu/abs/2012ApJ...752L..16K" target="_blank">Discovery of Super-Li-rich Red Giants in Dwarf Spheroidal Galaxies</a> <br>
+			    Evan Kirby, <strong>Xiaoting Fu</strong>, Puragra Guhathakurta, & Licai Deng, 2012, ApJ,752L,16K</p>
+			   <p> <a href="http://adsabs.harvard.edu/abs/2015MNRAS.452.3256F" target="_blank">Lithium evolution in metal-poor stars: from Pre-Main Sequence to the Spite plateau</a> <br>
+			   <strong>Xiaoting Fu</strong>, Alessandro Bressan, Paolo Molaro, Paola Marigo, 2015, MNRAS, 452, 3256F</p>
+			   
+			   
+			   
+                  <h2>Education</h2>
+                    <h3><font color=grey> B.S., Optical Information Science and Technology </font></h3>
+                    <p><font size=+1> Beijing Jiaotong University (BJTU)<br>
+                      Beijing, China <br>
+					  September 2004 - June 2008
+                             </font> </p>
+                 
+				 <h3><font color=grey> M.S., Astrophysics </font></h3>
+                    <p><font size=+1> National Astronomical Observatories of China (NAOC)<br>
+                      Beijing, China <br>
+					  September 2009 - June 2012
+                             </font> </p>
+							 
+			     <h3><font color=grey> Ph.D., Astrophysics</font></h3>
+                    <p><font size=+1> International School for Advanced Studies (SISSA)<br>
+                      Trieste, Italy <br>
+					  November 2012 - present
+                             </font> </p>
+            <div class="row">
+
+               <div class="columns download">
+                  <p>
+                     <a href="xtfu_cv2015" class="button"><i class="fa fa-download"></i>Download Curriculum Vitae</a>
+                  </p>
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+
+
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="https://www.facebook.com/xiaoting.fu.5" target="_blank"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://twitter.com/xiaotingfu" target="_blank"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://www.flickr.com/photos/fuxiaoting"  target="_blank"><i class="fa fa-flickr"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2014 CeeVee</li>
+               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
+</html>
