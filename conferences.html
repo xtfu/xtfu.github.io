@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Conferences · Xiaoting FU 符晓婷</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="favicon.png">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --hero-bg: #395A79;
+      --navy: #001f4d;
+      --navy-body: #0a254d;
+      --navy-muted: #466082;
+      --surface-tint: #f5f8fc;
+      --border: #d8e1ee;
+      --border-strong: #b6c6dc;
+      --link: #1a4fa3;
+      --link-bg: #eaf1fb;
+      --gold: #b08a2e;
+      --max-w: 1040px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg);
+      color: var(--navy-body);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", "Segoe UI", Roboto, sans-serif;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top Navigation matching index.html */
+    .top-nav {
+      background-color: #333333;
+      width: 100%;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      text-align: center;
+      font-family: "opensans-bold", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+    }
+
+    .top-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .top-nav li a {
+      display: inline-block;
+      padding: 12px 14px;
+      line-height: 24px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      transition: color 0.2s ease-in-out;
+    }
+
+    .top-nav li a:hover,
+    .top-nav li a:focus-visible {
+      color: #11ABB0;
+    }
+
+    .top-nav li.current a {
+      color: #F06000;
+    }
+
+    /* Page Banner */
+    .page-header {
+      background-color: var(--hero-bg);
+      color: #ffffff;
+      padding: 2.5rem 1.5rem 2.1rem;
+      border-bottom: 3px solid var(--gold);
+    }
+
+    .page-header-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    .page-header h1 {
+      margin: 0 0 0.35rem;
+      font-size: clamp(1.5rem, 2.8vw, 2.05rem);
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .page-header p {
+      margin: 0;
+      font-size: 0.96rem;
+      color: #dce7f3;
+    }
+
+    /* Main Content */
+    main {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 2.2rem 1.5rem 4rem;
+    }
+
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--navy);
+      border-bottom: 2px solid var(--navy);
+      padding-bottom: 0.4rem;
+      margin: 0 0 1.4rem;
+    }
+
+    /* Conference Branch List */
+    .conf-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    details.conf-item {
+      border: 1px solid var(--border-strong);
+      border-left: 4px solid var(--hero-bg);
+      border-radius: 6px;
+      background-color: #ffffff;
+      overflow: hidden;
+    }
+
+    details.conf-item summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 1.15rem 1.35rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      background-color: #ffffff;
+      transition: background-color 0.15s ease;
+    }
+
+    details.conf-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details.conf-item summary:hover {
+      background-color: var(--surface-tint);
+    }
+
+    .conf-summary-left {
+      display: flex;
+      flex-direction: column;
+      gap: 0.28rem;
+      flex: 1 1 560px;
+    }
+
+    .conf-date {
+      display: inline-block;
+      align-self: flex-start;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--hero-bg);
+      background-color: var(--link-bg);
+      border: 1px solid #c9dbf5;
+      border-radius: 4px;
+      padding: 0.12rem 0.55rem;
+    }
+
+    .conf-title {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.45;
+    }
+
+    .conf-toggle-hint {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--navy-muted);
+      white-space: nowrap;
+    }
+
+    details.conf-item[open] .conf-toggle-hint::before {
+      content: "收起 ▴";
+    }
+
+    details.conf-item:not([open]) .conf-toggle-hint::before {
+      content: "点击查看纪要 ▾";
+    }
+
+    .conf-body {
+      padding: 1rem 1.35rem 1.25rem;
+      border-top: 1px solid var(--border);
+      background-color: var(--surface-tint);
+    }
+
+    .conf-meta {
+      margin: 0 0 0.9rem;
+      font-size: 0.92rem;
+      color: var(--navy-muted);
+    }
+
+    .conf-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .conf-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid var(--hero-bg);
+      background-color: var(--hero-bg);
+      color: #ffffff;
+      transition: background-color 0.15s ease, border-color 0.15s ease;
+    }
+
+    .conf-btn:hover,
+    .conf-btn:focus-visible {
+      background-color: var(--navy);
+      border-color: var(--navy);
+      color: #ffffff;
+    }
+
+    .conf-btn.secondary {
+      background-color: #ffffff;
+      color: var(--navy-muted);
+      border-color: var(--border-strong);
+      cursor: default;
+    }
+
+    .conf-btn.secondary:hover {
+      background-color: #ffffff;
+      color: var(--navy-muted);
+      border-color: var(--border-strong);
+    }
+
+    footer {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 1.4rem 1.5rem 2.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--navy-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    footer a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="top-nav" aria-label="Primary Navigation">
+    <ul>
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#portfolio">research</a></li>
+      <li><a href="index.html#publication">publication</a></li>
+      <li class="current"><a href="conferences.html">conferences</a></li>
+      <li><a href="index.html#resume">CV</a></li>
+      <li><a href="index.html#about">outreach(科普)</a></li>
+      <li><a href="index.html#testimonials">as a photographer</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-header">
+    <div class="page-header-inner">
+      <h1>Conferences &amp; Workshops</h1>
+      <p>学术会议与专题研讨会记录 · Xiaoting FU (符晓婷)</p>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="section-title">2026</h2>
+
+    <div class="conf-list">
+      <details class="conf-item">
+        <summary>
+          <div class="conf-summary-left">
+            <span class="conf-date">2026 November</span>
+            <span class="conf-title">“恒星星族研究与CSST科学机遇”学术研讨会（Stellar Population Studies and Scientific Opportunities with CSST）</span>
+          </div>
+          <span class="conf-toggle-hint" aria-hidden="true"></span>
+        </summary>
+        <div class="conf-body">
+          <p class="conf-meta">2026 年 11 月 10–11 日 · 中国科学院紫金山天文台（Purple Mountain Observatory, Nanjing）</p>
+          <div class="conf-links">
+            <a class="conf-btn" href="conferences/2026_pmo_csst_sp/csst_ssp_pmo_minutes.html">会议纪要（中文）</a>
+            <a class="conf-btn secondary" href="#" aria-disabled="true" onclick="return false;" title="English minutes coming soon">workshop minutes (English)</a>
+          </div>
+        </div>
+      </details>
+    </div>
+  </main>
+
+  <footer>
+    <span><a href="index.html">&larr; Back to Home</a></span>
+    <span>Xiaoting FU &middot; Purple Mountain Observatory, CAS</span>
+  </footer>
+
+</body>
+</html>

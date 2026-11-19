@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>“恒星星族研究与 CSST 科学机遇”学术研讨会会议纪要（2026年11月10–11日）</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #ffffff;
+      --surface-tint: #f5f8fc;
+      --surface-header: #edf2f9;
+      --border: #d8e1ee;
+      --border-strong: #b6c6dc;
+      --navy: #001f4d;
+      --hero-bg: #395A79;
+      --navy-body: #0a254d;
+      --navy-muted: #466082;
+      --link: #1a4fa3;
+      --link-hover: #0e3575;
+      --link-bg: #eaf1fb;
+      --gold: #b08a2e;
+      --gold-soft: #fdf8eb;
+      --radius: 6px;
+      --max-w: 1260px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg);
+      color: var(--navy-body);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", "Segoe UI", Roboto, sans-serif;
+      line-height: 1.78;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover, a:focus-visible {
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+
+    /* Header */
+    .hero {
+      background-color: var(--hero-bg);
+      color: #ffffff;
+      padding: 2.6rem 1.5rem 2.1rem;
+      border-bottom: 3px solid var(--gold);
+    }
+
+    .hero-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    .hero-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #e6d39c;
+      margin-bottom: 0.55rem;
+    }
+
+    .hero h1 {
+      margin: 0 0 0.4rem;
+      font-size: clamp(1.5rem, 2.8vw, 2.15rem);
+      font-weight: 700;
+      line-height: 1.32;
+      color: #ffffff;
+    }
+
+    .hero-subtitle {
+      margin: 0 0 1.25rem;
+      font-size: clamp(0.94rem, 1.5vw, 1.08rem);
+      color: #cddcf2;
+      font-weight: 400;
+    }
+
+    .meta-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.8rem;
+      font-size: 0.9rem;
+      color: #e3ecf8;
+      padding-top: 0.9rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .meta-item strong {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    /* Sticky Navigation */
+    .toc-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background-color: #ffffff;
+      border-bottom: 1px solid var(--border-strong);
+    }
+
+    .toc-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0.6rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+
+    .toc-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem 0.65rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+
+    .toc-links a {
+      display: inline-block;
+      padding: 0.24rem 0.6rem;
+      border-radius: 4px;
+      color: var(--navy);
+    }
+
+    .toc-links a:hover, .toc-links a:focus-visible {
+      background-color: var(--link-bg);
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    .btn-ghost {
+      appearance: none;
+      border: 1px solid var(--border-strong);
+      background-color: #ffffff;
+      color: var(--navy);
+      font-size: 0.82rem;
+      font-weight: 500;
+      padding: 0.28rem 0.72rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .btn-ghost:hover, .btn-ghost:focus-visible {
+      border-color: var(--link);
+      color: var(--link);
+      background-color: var(--link-bg);
+    }
+
+    /* Main Layout */
+    main {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+      background-color: #ffffff;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      scroll-margin-top: 4.5rem;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      border-bottom: 2px solid var(--navy);
+      padding-bottom: 0.45rem;
+      margin: 0 0 1.25rem;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: 1.38rem;
+      color: var(--navy);
+      font-weight: 700;
+    }
+
+    .section-tag {
+      font-size: 0.82rem;
+      color: var(--navy-muted);
+      font-weight: 500;
+    }
+
+    /* Summary Card */
+    .summary-card {
+      background-color: #ffffff;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--navy);
+      border-radius: var(--radius);
+      padding: 1.4rem 1.65rem;
+    }
+
+    .summary-card p {
+      margin: 0 0 0.85rem;
+      color: var(--navy-body);
+      text-align: justify;
+    }
+
+    .summary-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .kpi-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.85rem;
+      margin: 1.2rem 0 0;
+    }
+
+    .kpi-box {
+      background-color: var(--surface-tint);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 0.8rem 0.95rem;
+    }
+
+    .kpi-box .kpi-label {
+      font-size: 0.78rem;
+      color: var(--navy-muted);
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .kpi-box .kpi-val {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--navy);
+      line-height: 1.45;
+    }
+
+    /* Inline Cross-Reference Links */
+    .ref-link {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--link);
+      background-color: var(--link-bg);
+      border: 1px solid #c9dbf5;
+      border-radius: 3px;
+      padding: 0.02rem 0.36rem;
+      margin-left: 0.22rem;
+      vertical-align: baseline;
+      white-space: nowrap;
+    }
+
+    .ref-link:hover, .ref-link:focus-visible {
+      background-color: var(--navy);
+      border-color: var(--navy);
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .back-link {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--navy-muted);
+      padding: 0.16rem 0.5rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    .back-link:hover, .back-link:focus-visible {
+      color: var(--link);
+      border-color: var(--link);
+      background-color: var(--link-bg);
+      text-decoration: none;
+    }
+
+    /* Synthesis Table */
+    .table-note {
+      font-size: 0.86rem;
+      color: var(--navy-muted);
+      margin: -0.5rem 0 0.9rem;
+    }
+
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      background-color: #ffffff;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius);
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .matrix-table {
+      width: 100%;
+      min-width: 1060px;
+      border-collapse: collapse;
+      font-size: 0.87rem;
+      line-height: 1.62;
+    }
+
+    .matrix-table thead th {
+      background-color: var(--navy);
+      color: #ffffff;
+      text-align: left;
+      font-weight: 600;
+      padding: 0.8rem 0.85rem;
+      border-bottom: 2px solid var(--gold);
+      border-right: 1px solid rgba(255, 255, 255, 0.14);
+      vertical-align: bottom;
+    }
+
+    .matrix-table thead th:last-child {
+      border-right: none;
+    }
+
+    .matrix-table tbody td {
+      padding: 0.85rem;
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      vertical-align: top;
+      color: var(--navy-body);
+      background-color: #ffffff;
+    }
+
+    .matrix-table tbody td:last-child {
+      border-right: none;
+    }
+
+    .matrix-table tbody tr:nth-child(even) td {
+      background-color: var(--surface-tint);
+    }
+
+    .matrix-table tbody td:first-child {
+      font-weight: 700;
+      color: var(--navy);
+      width: 15%;
+      background-color: var(--surface-header);
+    }
+
+    .matrix-table .participants {
+      display: block;
+      margin-top: 0.3rem;
+      font-size: 0.79rem;
+      font-weight: 400;
+      color: var(--navy-muted);
+    }
+
+    .matrix-table .row-refs {
+      margin-top: 0.45rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+    }
+
+    .matrix-table .row-refs .ref-link {
+      margin-left: 0;
+    }
+
+    .matrix-table ul {
+      margin: 0;
+      padding-left: 1.08rem;
+    }
+
+    .matrix-table li {
+      margin-bottom: 0.4rem;
+    }
+
+    .matrix-table li:last-child {
+      margin-bottom: 0;
+    }
+
+    .no-demand {
+      color: var(--navy-muted);
+    }
+
+    /* Session Banner & Talk Cards */
+    .session-banner {
+      background-color: var(--surface-header);
+      border: 1px solid var(--border-strong);
+      border-left: 4px solid var(--gold);
+      border-radius: var(--radius);
+      padding: 0.8rem 1.2rem;
+      margin-bottom: 1.2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+      scroll-margin-top: 4.5rem;
+    }
+
+    .session-banner h3 {
+      margin: 0;
+      font-size: 1.08rem;
+      color: var(--navy);
+    }
+
+    .session-meta {
+      font-size: 0.84rem;
+      color: var(--navy-muted);
+    }
+
+    .talk-card {
+      background-color: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.35rem 1.55rem;
+      margin-bottom: 1.35rem;
+      scroll-margin-top: 4.5rem;
+    }
+
+    .talk-card:target,
+    .qa-item:target,
+    .note-box:target,
+    .session-banner:target {
+      outline: 2px solid var(--gold);
+      background-color: var(--gold-soft);
+      transition: background-color 0.35s ease;
+    }
+
+    .talk-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.5rem 1rem;
+      padding-bottom: 0.8rem;
+      margin-bottom: 0.95rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .talk-title {
+      margin: 0;
+      font-size: 1.12rem;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.4;
+    }
+
+    .talk-speaker {
+      margin: 0.28rem 0 0;
+      font-size: 0.9rem;
+      color: var(--navy-muted);
+    }
+
+    .talk-speaker strong {
+      color: var(--navy);
+    }
+
+    .talk-header-right {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      flex-shrink: 0;
+    }
+
+    .talk-pill {
+      display: inline-block;
+      font-size: 0.76rem;
+      font-weight: 600;
+      padding: 0.18rem 0.6rem;
+      border-radius: 4px;
+      background-color: var(--navy);
+      color: #ffffff;
+      white-space: nowrap;
+    }
+
+    .talk-card h4 {
+      margin: 0.95rem 0 0.45rem;
+      font-size: 0.96rem;
+      color: var(--navy);
+      font-weight: 700;
+    }
+
+    .talk-card p {
+      margin: 0 0 0.72rem;
+      color: var(--navy-body);
+      font-size: 0.94rem;
+      text-align: justify;
+    }
+
+    .talk-card ul {
+      margin: 0.3rem 0 0.8rem;
+      padding-left: 1.25rem;
+      color: var(--navy-body);
+      font-size: 0.94rem;
+    }
+
+    .talk-card li {
+      margin-bottom: 0.45rem;
+    }
+
+    /* Collapsible Q&A */
+    details.qa-block {
+      margin-top: 0.95rem;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      background-color: #ffffff;
+      scroll-margin-top: 4.5rem;
+    }
+
+    details.qa-block summary {
+      cursor: pointer;
+      padding: 0.65rem 1rem;
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--navy);
+      background-color: var(--surface-tint);
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      user-select: none;
+    }
+
+    details.qa-block summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details.qa-block summary::after {
+      content: "收起";
+      font-size: 0.78rem;
+      color: var(--navy-muted);
+      font-weight: 500;
+    }
+
+    details.qa-block:not([open]) summary::after {
+      content: "展开";
+    }
+
+    .qa-content {
+      padding: 0.9rem 1.1rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .qa-item {
+      margin-bottom: 0.8rem;
+      padding: 0.45rem 0.55rem 0.8rem;
+      border-bottom: 1px dashed var(--border-strong);
+      border-radius: 4px;
+      scroll-margin-top: 4.5rem;
+    }
+
+    .qa-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0.3rem;
+      border-bottom: none;
+    }
+
+    .qa-q {
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 0.3rem;
+      font-size: 0.92rem;
+    }
+
+    .qa-a {
+      color: var(--navy-body);
+      font-size: 0.91rem;
+      margin: 0;
+      text-align: justify;
+    }
+
+    .note-box {
+      background-color: var(--surface-tint);
+      border: 1px solid var(--border-strong);
+      border-left: 4px solid var(--link);
+      border-radius: var(--radius);
+      padding: 0.95rem 1.2rem;
+      margin-top: 0.9rem;
+      font-size: 0.93rem;
+      color: var(--navy-body);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .note-box strong {
+      color: var(--navy);
+    }
+
+    /* Group Photo */
+    .photo-card {
+      margin: 0;
+      background-color: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem;
+    }
+
+    .photo-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
+    .photo-card figcaption {
+      margin-top: 0.7rem;
+      font-size: 0.88rem;
+      color: var(--navy-muted);
+      text-align: center;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.86em;
+      padding: 0.08rem 0.3rem;
+      border-radius: 3px;
+      background-color: var(--surface-tint);
+      border: 1px solid var(--border);
+      color: var(--navy);
+    }
+
+    footer {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 1.4rem 1.5rem 2.8rem;
+      border-top: 1px solid var(--border-strong);
+      font-size: 0.84rem;
+      color: var(--navy-muted);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    @media (max-width: 720px) {
+      .hero {
+        padding: 1.8rem 1rem 1.5rem;
+      }
+      main {
+        padding: 1.25rem 1rem 2.5rem;
+      }
+      .talk-card, .summary-card {
+        padding: 1rem 1rem;
+      }
+      .toc-inner {
+        padding: 0.55rem 1rem;
+      }
+    }
+
+    @media print {
+      .toc-nav, .back-link {
+        display: none !important;
+      }
+      body {
+        background: #ffffff;
+        color: #001f4d;
+        font-size: 10.5pt;
+      }
+      .hero {
+        background: #395A79 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .talk-card, .summary-card, .table-wrap {
+        break-inside: avoid;
+      }
+      .matrix-table {
+        min-width: 0;
+        font-size: 8.5pt;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-label">CSST Stellar Population Workshop · PMO 2026</div>
+      <h1>“恒星星族研究与 CSST 科学机遇”学术研讨会会议纪要</h1>
+      <p class="hero-subtitle">Stellar Population Studies and Scientific Opportunities with CSST</p>
+      <div class="meta-grid">
+        <div class="meta-item"><strong>会议日期：</strong>2026 年 11 月 10–11 日</div>
+        <div class="meta-item"><strong>会议地点：</strong>中国科学院紫金山天文台（PMO）3-402 会议室</div>
+        <div class="meta-item"><strong>召集与主持：</strong>符晓婷（中国科学院紫金山天文台）</div>
+        <div class="meta-item"><strong>议程构成：</strong>10 场专题报告与多轮专题讨论</div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="toc-nav" aria-label="页面导航">
+    <div class="toc-inner">
+      <ul class="toc-links">
+        <li><a href="#summary">会议概要</a></li>
+        <li><a href="#group-photo">会议合影</a></li>
+        <li><a href="#matrix">综合分析表</a></li>
+        <li><a href="#day1-am">11月10日 上午</a></li>
+        <li><a href="#day1-pm">11月10日 下午</a></li>
+        <li><a href="#day2-am">11月11日 上午</a></li>
+        <li><a href="#day2-pm">11月11日 下午与闭幕</a></li>
+      </ul>
+      <div>
+        <button type="button" class="btn-ghost" id="toggle-all-qa">折叠全部讨论</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- 一、会议概要 -->
+    <section id="summary" aria-labelledby="summary-title">
+      <div class="section-heading">
+        <h2 id="summary-title">一、两天会议概要</h2>
+        <span class="section-tag">2026 年 11 月 10–11 日 · 紫金山天文台</span>
+      </div>
+
+      <div class="summary-card">
+        <p>2026 年 11 月 10 日至 11 日，“恒星星族研究与 CSST 科学机遇”学术研讨会在中国科学院紫金山天文台（PMO）举行。会议由紫金山天文台符晓婷及国家天文台邓李才、刘超共同召集，符晓婷主持（<a href="#opening">开幕致辞</a>），依托 CSST 联合科学中心特聘咨询专家、中国科学院国际人才计划（PIFI）访问学者 <strong>Alessandro Bressan（SISSA）</strong>访问紫台的契机，邀请国内各单位的恒星星族演化、星族合成领域的研究学者，围绕中国空间站巡天空间望远镜（CSST）的恒星星族理论模型、巡天仿真与数据分析方法开展了 10 场专题报告与系统讨论。</p>
+
+        <p>CSST 兼具大视场、高像质和宽波段等特点，并将开展大规模多色成像和无缝光谱巡天，为恒星星族研究提供新的重要数据，有望在近邻可分辨星族星系的恒星形成历史、化学演化，以及大样本星系不可分辨星族研究的演化等方面发挥独特作用。两天议程覆盖了从单双星演化物理到银河系及其它星系观测解析的五个主要方向：（1）<strong>恒星演化网格、大气模型与热改正库</strong>，包括 Alessandro Bressan 的 <code>PARSEC</code> 恒星演化模型与多波段星族合成框架（<a href="#talk-1">报告 1</a>）、刘超关于面向大数据的 AI 恒星大气 2.0 与扩散 CMD 模型的构想与预研（<a href="#talk-2">报告 2</a>），以及陈洋关于 <code>TRILEGAL</code>、<code>YBC/rYBC/zYBC</code> 与 <code>CSST MSC</code> 的最新进展（<a href="#talk-6">报告 6</a>）；（2）<strong>高速神经网络代理模型</strong>，包括宛振开发的 106 波段 <code>AISO 100</code> 恒星参数推断引擎（<a href="#talk-9">报告 9</a>）；（3）<strong>近邻可分辨星系成像模拟与恒星形成历史（SFH）反演</strong>，包括汤静基于 <code>TNG50</code> 构建的 CSST 端到端 Mock 成像（<a href="#talk-3">报告 3</a>）与任逸针对本星系群星系的近红外 CMD-SFH 研究（<a href="#talk-7">报告 7</a>）；（4）<strong>CSST 宽视场无缝光谱、测光 SED/SFH 与极端大质量星系 IMF</strong>，包括韩云坤的 <code>BayeSED3 + CESS</code> 无缝光谱模拟（<a href="#talk-4">报告 4</a>）、高泽宇基于 <code>IllustrisTNG</code> 模拟先验的 SFH 重建与环境猝灭机制检验（<a href="#talk-8">报告 8</a>）以及顾梦基于 <code>MASSIVE</code> 巡天的径向 IMF 测量（<a href="#talk-5">报告 5</a>）；（5）<strong>双星共有包层演化与瞬变源</strong>，包括陈卓对高光度红新星（LRNe）及蓝离散星形成通道的分析（<a href="#talk-10">报告 10</a>）。</p>
+
+        <p>与会学者结合 CSST 的观测性能特点（<code>1.1 deg²</code> 视场、<code>~0.15"</code> 空间分辨率、含 <code>NUV/u</code> 波段的均一多色成像、<code>GU/GV/GI</code> 宽视场无缝光谱及多历元观测）与客观限制（无缝光谱分辨率 <code>R ~ 200</code>、红端测光截至 <code>~1 µm</code> 的 <code>z</code> 波段、<code>NUV</code> 尘埃消光建模不确定性），在多场讨论中形成了明确共识（见<a href="#day1-closing">第一日综合讨论</a>与<a href="#day2-closing">大会闭幕总结</a>）：一方面，应借助近邻星系在同一天区开展<strong>已分辨 CMD 逐星计数与未分辨总光子积分 SPS 的交叉校验</strong>（<a href="#talk-7-q7">报告 7 讨论 7</a>），并在底层理论库中系统补充独立氦丰度 <code>Y</code>、<code>[α/Fe]</code> 增丰与双星演化成分；另一方面，应依托已有端到端 Mock 数据定量评估 <code>R ~ 200</code> 条件下可稳健提取的最小星族观测量集合，并在精细吸收线测 IMF、近红外冷矮星约束及长基线时域监测等方向与 <code>MUST/JUST</code>、<code>Euclid/Roman</code>、<code>WFST</code> 及 <code>JWST/ELT</code> 形成互补。</p>
+
+        <div class="kpi-row">
+          <div class="kpi-box">
+            <div class="kpi-label">学术议程</div>
+            <div class="kpi-val">10 场专题报告 + 4 场集中讨论</div>
+          </div>
+          <div class="kpi-box">
+            <div class="kpi-label">研究尺度</div>
+            <div class="kpi-val">单双星演化 → 银河系与星团 → 近邻可分辨星系 → 高红移星系</div>
+          </div>
+          <div class="kpi-box">
+            <div class="kpi-label">主要理论与仿真工具</div>
+            <div class="kpi-val"><code>PARSEC/YBC</code>、<code>TRILEGAL</code>、<code>AISO 100</code>、<code>TNG50 Mock</code>、<code>BayeSED3+CESS</code></div>
+          </div>
+          <div class="kpi-box">
+            <div class="kpi-label">讨论涉及的协同观测设备</div>
+            <div class="kpi-val"><code>MUST/JUST</code>、<code>Euclid/Roman</code>、<code>WFST/LSST</code>、<code>JWST/ELT</code>、<code>M31 H I</code></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 二、会议合影 -->
+    <section id="group-photo" aria-labelledby="group-photo-title">
+      <div class="section-heading">
+        <h2 id="group-photo-title">二、会议合影</h2>
+        <span class="section-tag">2026 年 11 月 10 日 · 中国科学院紫金山天文台</span>
+      </div>
+
+      <figure class="photo-card">
+        <img src="group.png" alt="“恒星星族研究与 CSST 科学机遇”学术研讨会与会人员合影" loading="lazy">
+        <figcaption>“恒星星族研究与 CSST 科学机遇”学术研讨会合影</figcaption>
+      </figure>
+    </section>
+
+    <!-- 三、综合分析表 -->
+    <section id="matrix" aria-labelledby="matrix-title">
+      <div class="section-heading">
+        <h2 id="matrix-title">三、CSST 星族演化研究综合分析表</h2>
+        <span class="section-tag">依据会议录像与现场讨论整理 · 点击标签可直达对应章节</span>
+      </div>
+
+      <p class="table-note">本表依据报告与讨论实录整理</p>
+
+      <div class="table-wrap" tabindex="0" role="region" aria-label="CSST 星族演化研究综合分析表">
+        <table class="matrix-table">
+          <thead>
+            <tr>
+              <th scope="col">研究方向<br>（参会报告人/讨论者）</th>
+              <th scope="col">对 CSST 星族演化的科学价值</th>
+              <th scope="col">已有基础</th>
+              <th scope="col">星族模型需求</th>
+              <th scope="col">与其他观测联合观测的需求</th>
+              <th scope="col">下一步计划<br>（会上明确讨论/提出）</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                1. 恒星演化网格、热改正库与星场计数模拟
+                <span class="participants">Alessandro Bressan、陈洋、符晓婷、郑宪忠、汤静</span>
+                <div class="row-refs">
+                  <a class="ref-link" href="#talk-1">报告 1</a>
+                  <a class="ref-link" href="#talk-6">报告 6</a>
+                </div>
+              </td>
+              <td>
+                <ul>
+                  <li>提供从银河系单星、星团、完整 <code>M31</code> 盘晕（<code>1.1 deg²</code> 大视场与多历元自行，克服 HST 窄视场与滤光片不统一局限）至高红移引力透镜单星（<code>zYBC</code>）的统一测光定标 <a class="ref-link" href="#talk-6">报告 6</a><a class="ref-link" href="#talk-6-q1">讨论 1</a>。</li>
+                  <li>利用 CSST <code>NUV/u/g</code> 波段筛选<strong>蓝环（Blue Loop）恒星</strong>，在整星系尺度高时间分辨率追踪恒星形成传播 <a class="ref-link" href="#talk-6-q1">报告 6·讨论 1</a>。</li>
+                  <li>量化低银纬银盘拥挤极限（<code>g ~ 24</code>），支撑巡天策略评估与河外前景星剔除 <a class="ref-link" href="#talk-6">报告 6</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><code>PARSEC</code>（含与 PMO 合作计算中的 Super-AGB 与 EC-SNe 轨迹）、<code>COLIBRI</code>、<code>SEVN</code>、<code>GRASIL</code>、<code>GalaPy</code> <a class="ref-link" href="#talk-1">报告 1</a>。</li>
+                  <li><code>YBC</code> / 转动版 <code>rYBC</code> / 高红移版 <code>zYBC</code>，已更新 2026 版 CSST 9 滤光片（<code>NUV,u,g,r,i,z,WB,WI,V</code>）并构建全天 <code>CSST MSC</code> 模拟星表 <a class="ref-link" href="#talk-6">报告 6</a>。</li>
+                  <li>已完成 <code>Gaia</code> 星团、<code>47 Tuc</code>（修正 <code>+252 K</code>）、58 对分离食双星（DDLEBs）及白矮星 IFMR 校验 <a class="ref-link" href="#talk-1">报告 1</a><a class="ref-link" href="#talk-4-q1">报告 4·讨论 1</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>将独立氦丰度 <code>δ log Y</code>（含 PMO 富氦轨迹）与宽金属丰度 <code>[α/Fe]</code> 增丰系统纳入 <code>PARSEC + YBC</code> <a class="ref-link" href="#talk-1">报告 1</a><a class="ref-link" href="#talk-6-q2">报告 6·讨论 2</a>。</li>
+                  <li><strong>开放 <code>YBC</code> 对齐拼接后的 1D 恒星理论光谱 <code>F_λ</code> 接口</strong>，供星系 SPS 直接积分任意 IMF <a class="ref-link" href="#talk-6-q2">报告 6·讨论 2</a>。</li>
+                  <li>改进极低质量冷星边界条件与分子带、蓝环及蓝红超巨星比、大质量双星子阶段缺口；关注分子云逃逸时标 <code>t_esc</code> 对 CSST <code>NUV/u</code> 建模的影响 <a class="ref-link" href="#talk-1">报告 1</a><a class="ref-link" href="#talk-6-q1">报告 6·讨论 1</a><a class="ref-link" href="#talk-6-tea">茶歇</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong>与 <code>M31 H I</code> 中性氢观测联立</strong>（符晓婷提出）：CSST 完整覆盖 <code>M31</code> 后结合新发现的中性氢气泡/空洞，在整星系尺度研究恒星反馈与气体协同演化 <a class="ref-link" href="#talk-6-q1">报告 6·讨论 1</a>。</li>
+                  <li class="no-demand">注：<code>Gaia</code>、<code>HST</code>、<code>JWST</code> 在本部分主要作为已有模型定标与对比数据，未额外提出新的跨设备联合观测项目。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong>陈洋</strong>：完成 <code>YBC</code> 1D 拼接光谱输出封装与方法论文；随 CSST 滤光片参数更新 <code>CSST MSC</code> <a class="ref-link" href="#talk-6-q2">报告 6·讨论 2</a>。</li>
+                  <li><strong>符晓婷 / PMO + Bressan 教授</strong>：推进富氦轨迹、Super-AGB/EC-SNe 及 <code>[α/Fe]</code> 增丰 <code>YBC</code> 整合 <a class="ref-link" href="#talk-1">报告 1</a><a class="ref-link" href="#talk-6-q2">报告 6·讨论 2</a>。</li>
+                  <li><strong>汤静 + Bressan 教授</strong>：持续改进蓝环与蓝红超巨星比理论模型 <a class="ref-link" href="#talk-6-q1">报告 6·讨论 1</a>。</li>
+                  <li>未来结合 CSST <code>NUV/u</code> 与无缝光谱检验大质量热星风发射线模型 <a class="ref-link" href="#talk-6-q2">报告 6·讨论 2</a>。</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                2. 神经网络代理引擎与 AI 大气/CMD 模型
+                <span class="participants">宛振、刘超、符晓婷、Alessandro Bressan、现场光谱学专家</span>
+                <div class="row-refs">
+                  <a class="ref-link" href="#talk-2">报告 2</a>
+                  <a class="ref-link" href="#talk-9">报告 9</a>
+                </div>
+              </td>
+              <td>
+                <ul>
+                  <li>应对 CSST 10 年 <code>10–50 PB</code> 数据（数十亿恒星及约 100 个 <code>&lt;20 Mpc</code> 近邻可分辨星系，<code>4 Mpc</code> 内可达 <code>~27 mag</code>）下的海量贝叶斯 MCMC 参数推断计算需求 <a class="ref-link" href="#talk-2">报告 2</a><a class="ref-link" href="#talk-9">报告 9</a>。</li>
+                  <li>结合随温度变化的非线性消光反演银心等强较差消光星团与二维尘埃消光分布图 <a class="ref-link" href="#talk-9">报告 9</a>。</li>
+                  <li>面向极低质量星、巨/超巨星、极贫金属大质量星与异常光谱残差区研究恒星大气物理 <a class="ref-link" href="#talk-2-q2">报告 2·讨论 2</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><code>AISO 100</code> 傅里叶编码神经网络（覆盖含 CSST 在内的 <code>106</code> 波段，<code>A800</code> GPU 吞吐 <code>27,000+ stars/s</code> / <code>2.4 µs/star</code>，主流阶段精度 <code>~2–3 mmag</code>；已用 <code>LMC</code> 模拟、<code>HST</code> 22 波段 <code>ω Cen</code> + <code>MUSE</code> 及银心疏散星团 <code>R_V=2.7</code> 验证）<a class="ref-link" href="#talk-9">报告 9</a>。</li>
+                  <li><code>Kurucz-N1</code> 可微大气、AI <code>Li-like</code> 原子超网络与氢氦微元模拟（通过基尔霍夫定律检验）<a class="ref-link" href="#talk-2">报告 2</a>。</li>
+                  <li>Diffusion Model CMD 模拟器（已过 <code>HST M31</code> 矮星系验证）及含时 <code>M2M+化学演化</code> 动力学合作 <a class="ref-link" href="#talk-2">报告 2</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>核查 <code>AISO 100</code> 对 <strong>RGB bump</strong> 等物理时钟特征的保真度，避免过度平滑 <a class="ref-link" href="#talk-9-q3">报告 9·讨论 3</a>。</li>
+                  <li>测试将时间输入由 <code>log(age)</code> 改为 <code>log(remaining time)</code> 以改善氦闪/RGB 顶端/E-AGB 精度 <a class="ref-link" href="#talk-9-q4">报告 9·讨论 4</a>，并探索直接基于约 50 条演化轨线训练 <a class="ref-link" href="#talk-9-q2">报告 9·讨论 2</a>。</li>
+                  <li>将 <code>[α/Fe]</code>、氦丰度 <code>Y</code> 与自转纳入 <code>AISO</code> 及 Diffusion CMD 输入端 <a class="ref-link" href="#talk-2-q3">报告 2·讨论 3</a><a class="ref-link" href="#talk-9-q3">报告 9·讨论 3</a>。</li>
+                  <li>原子物理 AI 扩展至 <code>C, N, O</code>，中长期（5–10 年）推进双代理耦合 3D RHD+NLTE 灰盒大气 2.0 <a class="ref-link" href="#talk-2">报告 2</a><a class="ref-link" href="#talk-2-q4">讨论 4</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li class="no-demand">会上未就本方向提出新的跨望远镜 CSST 联合观测需求（算法检验主要使用已有 <code>HST</code>、<code>MUSE</code> 及 <code>LAMOST</code> 异常残差光谱等存档数据）。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong>宛振</strong>：校验 <code>RGB bump</code> 锐度、测试 <code>log(remaining time)</code> 重参数化；后续引入 <code>[α/Fe]</code>、<code>Y</code> 与转动网格并探索直接基于轨线训练 <a class="ref-link" href="#talk-9-qa">报告 9 讨论</a>。</li>
+                  <li><strong>刘超团队</strong>：在 Diffusion CMD 中加入 <code>Y</code> 与 <code>[α/Fe]</code> 开展近邻矮星系贝叶斯验证；将原子计算扩至 <code>C/N/O</code>，重点检验高难恒星参数区与含时动力学模型 <a class="ref-link" href="#talk-2-qa">报告 2 讨论</a>。</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                3. 拥挤星场端到端成像模拟与密集测光定标
+                <span class="participants">汤静、符晓婷、谢利智、张智昱、Alessandro Bressan</span>
+                <div class="row-refs">
+                  <a class="ref-link" href="#talk-3">报告 3</a>
+                </div>
+              </td>
+              <td>
+                <ul>
+                  <li>面向 CSST <code>17,500 deg²</code> 主巡天中约 <code>40 Mpc</code> 内约 <code>10,000</code> 个可分辨星系，定量评估核区/旋臂混叠（blending）、漫射基底光与三维尘埃消光对源提取、PSF 强制测光与 SFH 反演的系统误差 <a class="ref-link" href="#talk-3">报告 3</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><code>TRILEGAL + MAPPINGS III (&lt;10 Myr) + BC03 (&gt;10 Myr) + SKIRT (THEMIS) + CSST simulator</code> 模块化流水线（<code>Tang+2026 A&amp;A accepted</code>）<a class="ref-link" href="#talk-3">报告 3</a>。</li>
+                  <li><code>TNG50</code> <code>10 Mpc</code> 旋涡星系（约 51.7 万分辨星）与 <code>1 Mpc</code> 矮星系（约 77 万分辨星）2025 版 7 波段 Mock 图像及真值星表已发布于 China-VO（<code>s/101857</code>），并完成初步密集场 PSF 测光测试 <a class="ref-link" href="#talk-3">报告 3</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>接入 2026 版 <code>WB, WI, V</code> 等 9 波段完整空间变化 PSF 库重跑模拟 <a class="ref-link" href="#talk-3-q2">报告 3·讨论 2</a>。</li>
+                  <li>弥补目前 <code>MAPPINGS III</code> 仅含致密 H II 区/PDR、<strong>缺失全星系漫射电离气体（DIG）</strong>的不足 <a class="ref-link" href="#talk-3-q3">报告 3·讨论 3</a>。</li>
+                  <li>对接更高 ISM 分辨率流体模拟（如 <code>FIRE</code> / <code>COLIBRE</code>；谢利智指出半解析模型 SAM 缺乏真实 2D/3D 空间结构不适用可分辨成像）<a class="ref-link" href="#talk-3-q2">讨论 2</a><a class="ref-link" href="#talk-3-q3">讨论 3</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li class="no-demand">会上未提出与外部望远镜同步开展 CSST 联合观测；<strong>Bressan 教授</strong> 提出可先利用<strong>现有面对面 vs 侧向盘星系的 <code>FIR/射电</code> SFR 与巴耳末改正后 <code>Hα</code> SFR 对比</strong>检验 DIG 占比，亦探讨以 <code>Orion</code> 等三维恒星形成区及 <strong>CSST 自身 <code>IFS</code></strong> 交叉检验 <a class="ref-link" href="#talk-3-q3">报告 3·讨论 3</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>基于 China-VO 公开 Mock 数据比对 <code>SExtractor</code>、<code>Photutils</code> 与密集场 PSF 强制测光，并开展<strong>人工星注入实验（AST）</strong>量化混叠、双星与三维尘埃误差 <a class="ref-link" href="#talk-3">报告 3</a>。</li>
+                  <li>待仿真团队提供新版 9 波段 PSF 后更新模拟并对接 <code>FIRE/COLIBRE</code>；评估是否相应更新 CSST 白皮书提案 <a class="ref-link" href="#talk-3-q2">报告 3·讨论 2</a>。</li>
+                  <li>开展面对面 vs 侧向盘星系 DIG 物理检验 <a class="ref-link" href="#talk-3-q3">报告 3·讨论 3</a>。</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                4. 近邻星系已分辨 SFH、SFH–IMF 简并解耦与基准检验
+                <span class="participants">任逸、Alessandro Bressan、严志强、符晓婷、杨戟、现场女学者</span>
+                <div class="row-refs">
+                  <a class="ref-link" href="#talk-7">报告 7</a>
+                </div>
+              </td>
+              <td>
+                <ul>
+                  <li>克服地面近红外深度与角分辨率局限，将已分辨 CMD-SFH 反演从本星系群拓展至 <code>~40 Mpc</code>；利用空间稳定 PSF 预建模拟 CMD 库加速批量分析 <a class="ref-link" href="#talk-7">报告 7</a>。</li>
+                  <li>利用更深的 CSST 光学+NUV 同时探测低质量主序暗星与亮超巨星，具备直接<strong>解耦 SFH 与 IMF 简并</strong>的潜力，并可检验星周尘埃产出率差异 <a class="ref-link" href="#talk-7-q2">讨论 2</a><a class="ref-link" href="#talk-7-q4">讨论 4</a>。</li>
+                  <li>以近邻星系检验已分辨与未分辨星族理论的自洽性 <a class="ref-link" href="#talk-7-q7">讨论 7</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>基于 <code>UKIRT</code> <code>(J-H) vs (H-K)</code> 纯观测无模型剔除前景矮星、<code>PARSEC+COLIBRI</code>、真实图像 PSF 提取注入与泊松似然比（PLR）反演管线（<code>Ren+2021a,b; 2024</code>）<a class="ref-link" href="#talk-7">报告 7</a>。</li>
+                  <li>已完成 9 个本星系群矮星系（含 <code>NGC 6822</code> 近 <code>~35 Myr</code> 跃升）及 <code>M31</code>（约 <code>450 Myr</code> 前 <code>M32</code> 碰撞触发波形）和 <code>M33</code> 的全局/空间分辨 SFH、TRGB 金属丰度梯度与消光改正 <a class="ref-link" href="#talk-7">报告 7</a><a class="ref-link" href="#talk-7-q4">讨论 4</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong>核查 CSST <code>z/y</code> 波段（<code>~1 µm</code>）中 TRGB 的金属丰度敏感性</strong>与多尘 AGB/碳星表现（对比对金属丰度不敏感的 <code>2 µm</code> <code>K</code> 波段）<a class="ref-link" href="#talk-7-q4">报告 7·讨论 4</a>。</li>
+                  <li>引入环境自调节的 <strong><code>IGIMF</code></strong> 理论描述（严志强），区分矮星系随机抽样涨落与真实 IMF 变化 <a class="ref-link" href="#talk-7-q4">讨论 4</a><a class="ref-link" href="#talk-7-q6">讨论 6</a>。</li>
+                  <li>在大星系中探索纳入视线方向分子云前后景几何/多成分较差消光；补充累积恒星质量分数曲线以消除 <code>log(t)</code> 分箱视觉压低效应 <a class="ref-link" href="#talk-7-q3">讨论 3</a><a class="ref-link" href="#talk-7-q6">讨论 6</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong><code>JWST</code>（<code>K ~ 2 µm</code>）</strong>：作为金属丰度不敏感的 TRGB 标尺参考，以及与 CSST 结合实现高精度空间测光以融入年龄–金属丰度关系（AMR）<a class="ref-link" href="#talk-7-q4">报告 7·讨论 4</a>。</li>
+                  <li><strong>未来 <code>ELT</code> 极大口径光谱设备</strong>（任逸指出）：获取近邻河外单星光谱化学丰度以精确约束 AMR <a class="ref-link" href="#talk-7-q4">报告 7·讨论 4</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong>方法论文（任逸 + Bressan 教授 + 严志强）</strong>：用现有模拟星场与 CMD 拟合管线接入 CSST 滤光片，<strong>系统改变输入 IMF / 测试 <code>IGIMF</code></strong> 并补全累积质量分数曲线，定量评估 CSST 分辨 SFH 与 IMF 能力 <a class="ref-link" href="#talk-7-q3">讨论 3</a><a class="ref-link" href="#talk-7-q6">讨论 6</a>。</li>
+                  <li><strong>同天区基准检验（Bressan 教授 倡议）</strong>：在近邻星系同一天区平行运行“CMD 逐星计数”与“整场总光子积分未分辨 SPS”对比 <a class="ref-link" href="#talk-7-q7">讨论 7</a>。</li>
+                  <li><strong>陈洋 + 任逸</strong>：核查 CSST <code>z/y</code> 波段 TRGB 可用性 <a class="ref-link" href="#talk-7-q4">讨论 4</a>；构建稳定 PSF 预计算模拟 CMD 库 <a class="ref-link" href="#talk-7">报告 7</a>。</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                5. 宽视场无缝光谱（<code>R~200</code>）+ 测光联合 SED/SFH 与环境猝灭
+                <span class="participants">韩云坤、高泽宇、郑宪忠、Alessandro Bressan、符晓婷、现场 CSST 无缝光谱模拟学者</span>
+                <div class="row-refs">
+                  <a class="ref-link" href="#talk-4">报告 4</a>
+                  <a class="ref-link" href="#talk-8">报告 8</a>
+                  <a class="ref-link" href="#day1-closing">Day 1 总结</a>
+                </div>
+              </td>
+              <td>
+                <ul>
+                  <li>利用 <code>BayeSED3</code> 联合 CSST 测光与 <code>GU/GV/GI</code> 无缝光谱（低至 <code>SNR ≥ ~1</code>）显著提升恒星形成星系测红移与参数精度，并通过层级贝叶斯检验 TP-AGB、双星贡献与 IMF <a class="ref-link" href="#talk-4">报告 4</a>。</li>
+                  <li>利用对低分辨率不敏感的 <strong><code>D_n(4000)</code></strong> 配合 CSST <code>NUV/u</code> 约束近期 SFH，结合宇宙学模拟先验消除传统 SED 拟合约 <code>±50%</code> 的年龄偏倚，检验卫星星系环境猝灭的<strong>概率门控（Probabilistic Gating）</strong>机制 <a class="ref-link" href="#talk-8">报告 8</a><a class="ref-link" href="#talk-8-q1">讨论 1</a><a class="ref-link" href="#talk-8-q2">讨论 2</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><code>BayeSED3</code>（较 <code>Bagpipes</code> 快 10 倍以上，集成 <code>GUI/HBI/SBI</code>）+ <code>CESS</code> 无缝光谱模拟器（已完成 10 万个 DESI 匹配模拟星系测试及 <code>BC03/CB07/M05/Yunnan-II/BPASS v2.0</code> 层级检验）<a class="ref-link" href="#talk-4">报告 4</a>。</li>
+                  <li>基于 <code>IllustrisTNG</code> 先验的 SFH/CEH 反演框架（<code>TNG↔EAGLE</code> 弥散 <code>0.3–0.4 dex</code>，正演预测 SDSS <code>D_n(4000)/Hδ_A</code>，阐明须用恒星形成星系检验环境猝灭）<a class="ref-link" href="#talk-8">报告 8</a><a class="ref-link" href="#talk-8-q4">讨论 4</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>将 CSST 无缝光谱 SPS 模拟中的参数化 <code>tau</code> SFH 替换为<strong>高泽宇基于 <code>TNG</code> 先验生成的真实复杂 SFH/CEH</strong> <a class="ref-link" href="#talk-8-q2">报告 8·讨论 2</a>。</li>
+                  <li>在 <code>D4000</code> 建模中计入双星（提升紫外压低 <code>D4000</code>）与 <code>[α/Fe]</code>（减弱蓝端 Fe 吸收压低 <code>D4000</code>）效应 <a class="ref-link" href="#talk-8-q2">讨论 2</a>；引入多模拟先验（如 <code>EAGLE</code>）<a class="ref-link" href="#talk-8-tea">茶歇</a>。</li>
+                  <li>补测 <code>BPASS v2.2.1/v2.3</code>，联立<strong>氦增丰单星 vs 双星（<code>Yunnan-II</code>）</strong>检验椭圆星系 UV upturn 与 <code>Mg₂</code> 关系 <a class="ref-link" href="#talk-4-q2">报告 4·讨论 2</a>；扩充 <code>z &gt; 0.5</code> 宁静星系模拟样本 <a class="ref-link" href="#talk-4-q3">讨论 3</a>；凝练 <code>R~200</code> <strong>“最小关键星族可观测量”</strong>集合 <a class="ref-link" href="#day1-closing">Day 1 总结</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li class="no-demand">本方向暂未单独提出外部望远镜联合观测需求（相邻天体无缝光谱解混依赖 <strong>CSST 自身高分辨多色成像先验</strong> <a class="ref-link" href="#talk-4-q3">报告 4·讨论 3</a>；<code>SDSS/DESI/GALEX</code> 均属已有校验或模拟输入数据；高分辨吸收线互补见第 6 栏）。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong>高泽宇 + 现场 CSST 无缝光谱模拟学者</strong>：将 <code>TNG</code> 真实 SFH/CEH 接入 CSST 无缝光谱 Mock 星表，测试全谱贝叶斯与 <code>D_n(4000)</code> 恢复精度 <a class="ref-link" href="#talk-8-q2">报告 8·讨论 2</a>。</li>
+                  <li><strong>郑宪忠建议（韩云坤跟进）</strong>：利用 CSST 成像位置/轮廓先验，在 <code>BayeSED3</code> 中探索相邻重叠无缝光谱的<strong>混合/联合贝叶斯解混模型</strong>并引入非理想流量定标残差 <a class="ref-link" href="#talk-4-q3">报告 4·讨论 3</a>。</li>
+                  <li>用球状星团（如 <code>47 Tuc</code>）及 <code>GALEX</code> 椭圆星系校验单/双星紫外通道，补齐高红移宁静星系 Mock 与新版 <code>BPASS</code> 对比 <a class="ref-link" href="#talk-4-q1">讨论 1</a><a class="ref-link" href="#talk-4-q2">讨论 2</a>。</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                6. 极端大质量星系时变 IMF 与冷矮星经验库扩充
+                <span class="participants">顾梦、郑宪忠、符晓婷、Alessandro Bressan、现场与会专家</span>
+                <div class="row-refs">
+                  <a class="ref-link" href="#talk-5">报告 5</a>
+                </div>
+              </td>
+              <td>
+                <ul>
+                  <li>揭示极高质量早型星系中金属丰度主导的低质量端 <code>α_IMF</code> 径向底重梯度（忽略径向变化可致 <code>1 Re</code> 内总恒星质量低估约 <code>40%</code>），并与平坦 <code>[Mg/Fe]</code>（反映已演化大质量星）衔接 <a class="ref-link" href="#talk-5">报告 5</a><a class="ref-link" href="#talk-5-q3">讨论 3</a>。</li>
+                  <li>针对 CSST 无缝光谱 <code>R ~ 200</code> <strong>无法直接测量微弱矮星吸收线</strong>的客观限制，发挥 CSST 高分辨光学成像优势建立跨设备协同观测方案 <a class="ref-link" href="#talk-5-q2">报告 5·讨论 2</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><code>MASSIVE</code> 巡天 <code>41</code> 个极端大质量 ETGs 的 <code>Magellan/LDSS-3</code> 超高信噪比（<code>S/N &gt; 200/Å</code>, <code>R ~ 3000</code>）长缝光谱与 12 个物理量径向剖面（<code>arXiv:2606.24032</code>）<a class="ref-link" href="#talk-5">报告 5</a>。</li>
+                  <li>基于 <code>alf</code>（<code>MILES + E-IRTF + XSL DR3</code>、<code>MIST v1.2</code>、19 种元素微分响应）及球状星团检验流程 <a class="ref-link" href="#talk-5">报告 5</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>克服太阳邻域经验库在<strong>高金属丰度端缺乏高 <code>[α/Fe]</code> 恒星及极冷 M 矮星稀少</strong>的偏倚（现有理论大气分子带精度不足，仍宜结合窄带 Lick 指数）<a class="ref-link" href="#talk-5-q4">报告 5·讨论 4</a>。</li>
+                  <li>跟踪检验即将发布的含 <code>α</code> 变化与自转的 <code>MIST v2.0</code> <a class="ref-link" href="#talk-5">报告 5</a>。</li>
+                  <li>厘清 <code>Na I</code>/分子带质量敏感区间权重、<code>[Na/Fe]</code> 简并、晚期 <code>rejuvenation</code> 对 SSP 的影响及早期 <code>top-heavy</code> → 晚期 <code>bottom-heavy</code> 化学演化自洽性 <a class="ref-link" href="#talk-5-q3">讨论 3</a><a class="ref-link" href="#talk-5-q4">讨论 4</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong><code>MUST / JUST</code>（高分辨光谱协同）</strong>：由 <strong>CSST <code>0.15"</code> 多色成像搜寻强引力透镜样本并测量形态光分布</strong>，交由 <code>MUST/JUST</code>（<code>R ~ 2500–5000</code>，蓝端高敏）获取高信噪比精细吸收线光谱与动力学，实现“透镜 + 动力学 + SPS”联合约束 <a class="ref-link" href="#talk-5-q2">报告 5·讨论 2</a>。</li>
+                  <li><strong><code>Euclid H</code> 与 <code>Roman K</code>（近红外测光协同）</strong>：与 CSST 光学成像严格 PSF 匹配，利用对冷矮星更敏感的 <code>Roman K</code> 波段联合反演非参数化 SFH + IMF <a class="ref-link" href="#talk-5-q5">报告 5·讨论 5</a>。</li>
+                  <li><strong><code>LAMOST</code> + <code>Gaia</code></strong>：联合交叉定标扩充冷矮星经验光谱库 <a class="ref-link" href="#talk-5-q4">报告 5·讨论 4</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>规划 <strong>“CSST 强引力透镜与光学成像 + <code>MUST/JUST</code> 高分光谱 + <code>Euclid H / Roman K</code> 近红外测光”</strong> 统一 PSF 匹配与联合建模方案 <a class="ref-link" href="#talk-5-q2">讨论 2</a><a class="ref-link" href="#talk-5-q5">讨论 5</a>。</li>
+                  <li>评估利用 <strong><code>LAMOST</code>（<code>15–16 mag</code>）冷矮星光谱结合 <code>Gaia</code> 视差/CMD</strong>（符晓婷提醒切勿直接使用光谱管线 <code>log g</code>）扩充高金属丰度冷矮星模板库 <a class="ref-link" href="#talk-5-q4">报告 5·讨论 4</a>。</li>
+                  <li>在球状星团与 MASSIVE 样本中跟进检验 <code>MIST v2.0</code> 与 <code>XSL DR3</code> <a class="ref-link" href="#talk-5">报告 5</a>。</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                7. 共有包层双星演化、高光度红新星（LRN）与蓝离散星影响
+                <span class="participants">陈卓、Alessandro Bressan、符晓婷</span>
+                <div class="row-refs">
+                  <a class="ref-link" href="#talk-10">报告 10</a>
+                </div>
+              </td>
+              <td>
+                <ul>
+                  <li>阐明 AGB 双星风洛希瓣溢流、<code>BHL</code> 风中曳力多年期前兆增亮、爆发前骤降及氢复合前沿内负氢离子 <code>H^-</code> 辐射压驱动抛射的完整物理机制 <a class="ref-link" href="#talk-10">报告 10</a><a class="ref-link" href="#talk-10-q1">讨论 1</a>。</li>
+                  <li>明确星族建模中的影响边界：LRN 爆发率较低（<code>M31 ~1/yr</code>），常规集成光 SSP 可忽略其瞬变贡献；但相接双星并合通道（<code>V1309 Sco</code> 类）持续产生的<strong>蓝离散星（blue stragglers）</strong>在 <strong>CSST 已分辨恒星族群/星团 CMD</strong> 中不可忽视 <a class="ref-link" href="#talk-10-q2">报告 10·讨论 2</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>完成 <code>V1309 Sco</code>、<code>AT 2019zhd</code> 及 M31 最新爆发个案 <code>AT 2025abao</code>（<code>WFST + NEOWISE</code>，2025年11月爆发）的前身星、多年期前兆、骤降及主爆发 SED 全阶段反演 <a class="ref-link" href="#talk-10">报告 10</a>。</li>
+                  <li>自研 1D 辐射流体程序 <code>Guangqi</code> + <code>RADMC-3D</code> + <code>MESA</code>，阐明 <code>H^-</code> 不透明度（<code>&gt;20×</code> 电子散射、<code>~10^13 cm^-3</code> 近 LTE）加速机理及 3D 风聚焦双星轨道分叉理论 <a class="ref-link" href="#talk-10">报告 10</a><a class="ref-link" href="#talk-10-q1">讨论 1</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>完善 <code>H^-</code> 与外层冷中性流 <code>TiO/VO</code> 分子带非灰体辐射转移及共有包层/并合分叉建模 <a class="ref-link" href="#talk-10">报告 10</a><a class="ref-link" href="#talk-10-q1">讨论 1</a>。</li>
+                  <li>在解读 CSST 已分辨星团与近邻星系 CMD 时，注意区分相接双星并合产生的蓝离散星与真实年轻恒星族群 <a class="ref-link" href="#talk-10-q2">报告 10·讨论 2</a>。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong><code>WFST</code>（墨子巡天）及未来 <code>LSST / Roman</code></strong>（陈卓报告明确指向）：利用深度广域成像与高频长基线时域监测，协同 CSST 系统捕获 LRN 的<strong>早期前身星及多年期前兆信号</strong> <a class="ref-link" href="#talk-10">报告 10</a>。</li>
+                  <li class="no-demand">注：<code>NEOWISE</code>、<code>Gaia DR3</code>、<code>LAMOST</code>、<code>ALMA</code> 为报告中回顾的已有观测数据，未就其与 CSST 提出新联合观测。</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>依托 <strong>CSST + WFST（以及 <code>LSST / Roman</code>）</strong> 的深度成像与长基线监测能力，系统搜寻并追踪近邻星系中 LRN 前身星与多年期前兆事件（如 <code>AT 2025abao</code> 类样本）<a class="ref-link" href="#talk-10">报告 10</a>。</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 三、11月10日 上午场 -->
+    <section id="day1-am" aria-labelledby="day1-am-title">
+      <div class="section-heading">
+        <h2 id="day1-am-title">四、11 月 10 日（Day 1）上午场详细纪要</h2>
+        <span class="section-tag">09:30–12:00 · 主持：符晓婷</span>
+      </div>
+
+      <div class="session-banner" id="opening">
+        <h3>开幕致辞（Opening Address）</h3>
+        <span class="session-meta">发言人：符晓婷（中国科学院紫金山天文台）</span>
+      </div>
+
+      <div class="talk-card">
+        <p>符晓婷代表主办方欢迎线上线下与会专家莅临紫金山天文台，感谢<strong>杨戟教授</strong>对 CSST 相关恒星演化与星族研究工作的支持与推动，并介绍本次研讨会借 <strong>Alessandro Bressan 教授</strong>（CSST 联合科学中心特聘咨询专家、CAS PIFI 访问学者）来访契机，专设充足自由讨论时段，旨在系统衔接恒星演化与星族模型、巡天仿真定标以及 CSST 多色测光与无缝光谱实测解析各环节，提前做好理论工具与研究队伍准备。</p>
+      </div>
+
+      <!-- 报告 1 -->
+      <article class="talk-card" id="talk-1">
+        <div class="talk-header">
+          <div>
+            <h3 class="talk-title">报告 1：Modelling Stellar Populations in Galaxies</h3>
+            <p class="talk-speaker"><strong>报告人：</strong>Alessandro Bressan（SISSA / CAS PIFI 访问教授） · <em>原题副标题：From Stellar Evolution &amp; PARSEC to Panchromatic Population Synthesis</em></p>
+          </div>
+          <div class="talk-header-right">
+            <a class="back-link" href="#matrix">↑ 分析表</a>
+            <span class="talk-pill">Day 1 AM</span>
+          </div>
+        </div>
+
+        <h4>报告主要内容小结</h4>
+        <p>报告系统综述了从单双星演化物理（<code>PARSEC</code>）出发，经等龄线与辐射传输框架构建全波段星族合成（SPS）及星系 SED 拟合工具的完整体系，旨在弥合恒星物理与河外星系两个研究领域之间的隔阂。</p>
+        <ul>
+          <li><strong>恒星物理与 <code>PARSEC</code> 演化网格（<code>0.09–600 M☉</code>、<code>Pop III</code> 至 <code>Z = 0.06</code>）</strong>：基于 <code>Caffau+11</code> 太阳参考丰度与日震学定标（<code>Z_init = 0.0177, Y_init = 0.28, MLT = 1.74, dY/dZ = 1.78</code>），结合 <code>Gaia DR2/DR3</code> 星团（<code>47 Tuc, Hyades, Praesepe, M67, NGC 6397</code>）CMD、58 对双谱线分离食双星（DDLEBs）贝叶斯分析（固定较小核超射 <code>λ_ov ≈ 0.4–0.5</code> 叠加自转分布）、白矮星初末质量关系（IFMR）与锂丰度（显示包层底超射 <code>Λ_e</code> 随初始质量需由 <code>0.5</code> 增至 <code>2.0</code>）及 <code>JWST</code> <code>NGC 628</code> TRGB 观测持续完善低质量星表面边界条件、对流超射与自转混合。</li>
+          <li><strong>Super-AGB、EC-SNe 与极大质量/双星演化</strong>：正在紫台与<strong>符晓婷</strong>合作计算含最新 <code>12C+12C</code> 核反应率（如 <code>JINA</code>）的 <strong>Super-AGB 与电子俘获超新星（EC-SNe）</strong>新轨迹（下限约 <code>7.6 M☉</code>，尚未公开发布）；并推进 <code>350–600 M☉</code> 超大质量星与双星并合代码 <code>SEVN / GALSEVN</code>（覆盖 PPISN、PISN 与 DBH 分支）。</li>
+          <li><strong>积分星族、独立氦丰度缺口与泛波段 SED 工具</strong>：回顾利用 Lick 窄带指数（<code>Hβ</code>、<code>[MgFe]</code>、<code>[α/Fe]</code>）在约 14,000 个 SDSS 星系上打破年龄–金属丰度 3/2 简并；指出当 IMF 随时间变化时 SSP 可分离性失效，且当前 SPS 模型普遍以固定 <code>ΔY/ΔZ</code> 锁死氦丰度而<strong>未将独立氦丰度 <code>δ log Y</code> 设为自由参数</strong>，亟需利用现有算力系统补齐。展示了 <code>CSST</code> 波段在全辐射传输代码 <code>GRASIL</code> 上的位置，提醒受年轻恒星逃离致密分子云时标（<code>t_esc</code>）影响，<strong>UV/NUV 波段在理论上最难精确建模</strong>；同时介绍了每秒可达 700–1000 次似然计算的开源贝叶斯拟合工具 <code>GalaPy</code>（计划拓展光谱拟合、自洽 AGN 与 SBI）。</li>
+        </ul>
+
+        <details class="qa-block" id="talk-1-qa" open>
+          <summary>报告后讨论内容（3 轮问答）</summary>
+          <div class="qa-content">
+            <div class="qa-item" id="talk-1-q1">
+              <div class="qa-q">Q1（现场与会专家）：为何无论大质量星还是红巨星，对流超射参数 <code>λ</code> 常被视为无量纲或似乎与光度/半径尺度无关？</div>
+              <p class="qa-a"><strong>Bressan 回应：</strong><code>λ = l / H_p</code> 本身以当地压强标高 <code>H_p</code> 归一化，尺度效应已包含在 <code>H_p</code> 中。实际上 <code>λ</code> 并非严格常数——IFMR 与碳星光度约束显示随质量增加 <code>Λ_e</code> 需从 <code>0.5</code> 升至 <code>2.0</code>，背后可能隐含 1D 模型尚未包含的核–包层切变或自转混合等物理机制。</p>
+            </div>
+            <div class="qa-item" id="talk-1-q2">
+              <div class="qa-q">Q2（现场与会专家）：1D 或 3D 流体力学模拟中是否确实能看到超射现象？</div>
+              <p class="qa-a"><strong>Bressan 与符晓婷回应：</strong>已有大量 3D 辐射流体模拟（如 Freytag、Steffen、Viallet、Arnett+15）展现明确超射；Bressan 与汤静核查过若干声称“几乎无超射”的文献插图，发现其内部仍存在明显超射，同时汤静也研究了包层超射对蓝环的影响（参见 <a href="#talk-6-q1">报告 6 讨论 1</a>）。<strong>符晓婷</strong>补充：3D 大气模型的混合长参数 <code>α_MLT</code> 通常小于 1D 内部结构模型，原因在于大气层侧重物质输运而深层对流核心侧重能量输运。</p>
+            </div>
+            <div class="qa-item" id="talk-1-q3">
+              <div class="qa-q">Q3（现场与会专家）：构建新一代 3D 恒星大气结构模型时，应从 <code>τ = ∞</code> 还是从对流超射边界层开始耦合？</div>
+              <p class="qa-a"><strong>Bressan 回应：</strong>可将大气建模拆为“结构”与“辐射传播”，结构模拟应尽量往深层计算，直到模型自身自洽预言出辐射边界层位置而非人为截断，并提及近年研究揭示红超巨星表面可能由少数极巨型对流泡主导的现象。</p>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <!-- 报告 2 -->
+      <article class="talk-card" id="talk-2">
+        <div class="talk-header">
+          <div>
+            <h3 class="talk-title">报告 2：CSST Driven Thinkings About Stellar Physics, Stellar Populations, and Galaxies</h3>
+            <p class="talk-speaker"><strong>报告人：</strong>刘超（Chao Liu，中国科学院国家天文台 NAOC） · <em>日程题目：Recent Update on CSST</em></p>
+          </div>
+          <div class="talk-header-right">
+            <a class="back-link" href="#matrix">↑ 分析表</a>
+            <span class="talk-pill">Day 1 AM</span>
+          </div>
+        </div>
+
+        <h4>报告主要内容小结</h4>
+        <p>报告围绕 CSST 巡天的大数据规模与跨尺度科学机遇，提出了在“大数据 + AI”时代构建新一代恒星大气、原子物理及星系反演模型的长期思路与阶段性预研进展。</p>
+        <ul>
+          <li><strong>CSST 巡天数据规模与跨尺度样本优势</strong>：10 年巡天数据规模预计达 <strong><code>10–50 PB</code></strong>，覆盖多波段光学–近紫外成像及 <code>GU, GV, GI</code> 三个无缝光谱波段；预计观测约 <strong>100 个近邻可分辨星系</strong>（最远至约 <code>20 Mpc</code>，其中 <code>4 Mpc</code> 内如 <code>M81</code> 在 <code>150s×10</code> 曝光下可深至约 <code>27 mag</code>、覆盖 TRGB 以下约 2.5 星等红巨星支），将“近邻单星—近邻可分辨星系—<code>z ~ 6</code> 早期积分星系”统一到同一均匀观测平台上。报告强调 AI 擅长挖掘经验规律，但科研的核心价值仍在于“求解反问题、揭示新物理”。</li>
+          <li><strong>恒星大气模型 2.0 路线图（5–10 年规划）</strong>：针对传统 1D 模型（<code>Kurucz, MARCS, PHOENIX, TLUSTY</code>）金属线精度不足及完整 3D RHD+NLTE 模拟算力过高（单颗太阳即需集群运行 20 余小时）的困境，团队展示了三层路径：已完成可微 1D 大气 <code>Kurucz-N1</code>（<code>Li+2025</code>）；尝试全方程 <code>NLTE-PINN</code> 后发现难以收敛；转向借鉴核聚变工程思路的<strong>双代理耦合微元模拟器（路径 II）</strong>，分别训练辐射转移（NLTE）与流体力学（MHD/RHD）代理模型并在硬物理守恒律下耦合积分。</li>
+          <li><strong>AI 原子物理计算与星系/CMD 建模</strong>：展示基于 B 样条径向轨道与正交约束的变分超网络（<code>Head H</code>），已在类锂（<code>Li-like, Z ≤ 14</code>）体系取得接近传统 <code>FAC/GRASP2K</code> 的低激发能级精度（中位误差约 <code>281 cm⁻¹</code>），并在氢氦微元（约 <code>10^6</code> 原子）辐射传输测试中通过 <code>Lyman/Balmer</code> 吸收线与基尔霍夫定律检验，后续将扩展至 <code>C, N, O</code>。星系方面展示了基于 DNN 拟合矮星系 SFH（与 <code>MATCH</code> 一致）、基于 <strong>Diffusion Model</strong> 生成等效 <code>PARSEC</code> CMD（已在 <code>HST M31</code> 矮星系数据验证，多卡训练约 2 天即可快速应用于大样本星系），以及已启动的 <code>M2M + 化学演化</code>含时动力学合作建模。</li>
+        </ul>
+
+        <details class="qa-block" id="talk-2-qa" open>
+          <summary>报告后讨论内容（4 轮问答）</summary>
+          <div class="qa-content">
+            <div class="qa-item" id="talk-2-q1">
+              <div class="qa-q">Q1（现场与会专家）：如何比较纯 PINN 与“神经网络加速 + 精确物理求解器”的混合（Hybrid）方法？</div>
+              <p class="qa-a"><strong>刘超回应：</strong>当物理约束简单时（如仅加静力学平衡的 <code>Kurucz-N1</code>），PINN 有效；但把全套恒星结构方程纳入 PINN 损失函数则完全无法收敛。因此团队转向<strong>代理模型（Surrogate Model）</strong>：主干从物理输入–输出数据学习统计规律，仅在损失函数中加入少数核心守恒律作强约束。<strong>符晓婷</strong>亦补充介绍了结合更完备量子物理效应修正恒星大气模型的前沿动向。</p>
+            </div>
+            <div class="qa-item" id="talk-2-q2">
+              <div class="qa-q">Q2（现场与会专家）：新一代恒星大气模型是否应先在太阳及参数已知的高精度近邻恒星上严格定标？</div>
+              <p class="qa-a"><strong>刘超回应：</strong>赞同，同时指出对于太阳邻域普通主序星现有模型已相当准确，因此从第一性原理出发的新模型应把主要目标放在最困难的参数区——<strong>极低质量星、巨星、超巨星、大质量星、极贫金属大质量星</strong>以及实测光谱存在显著残差的稀有/异常恒星（如 <code>LAMOST</code> 中未解的异常谱线）。</p>
+            </div>
+            <div class="qa-item" id="talk-2-q3">
+              <div class="qa-q">Q3（Alessandro Bressan 提问 + 符晓婷补充）：如何应对扩散模型/AI 反演中的“多解简并性”、训练模型不完备性，以及化学成分（<code>[α/Fe]</code> 与氦丰度 <code>Y</code>）变化的影响？</div>
+              <p class="qa-a"><strong>刘超回应：</strong>观测选择不完备可通过人工星试验构造选择函数解决；而理论演化库本身可能遗漏高红移极端天体路径则是根本难题（亦是其对早期宇宙高红移反演总体持审慎态度的原因）。快速可微正演模拟器的优势在于构建完整贝叶斯后验 PDF，呈现所有可能的简并解而非强求单一解。针对<strong>符晓婷</strong>指出 <code>[α/Fe]</code> 与 <code>Y</code> 会显著改变恒星寿命与 CMD 形态，<strong>刘超当即采纳</strong>：架构上可直接将 <code>Y</code> 与 <code>[α/Fe]</code> 与 <code>DM, A_V</code> 并列加入扩散模型输入端，预生成 <code>PARSEC</code> 训练集并训练约两天即可应用于大批星系。</p>
+            </div>
+            <div class="qa-item" id="talk-2-q4">
+              <div class="qa-q">Q4（Alessandro Bressan 开放性提问）：能否借助总能量/通量守恒跳过繁复的微观逐线辐射转移，直接把恒星内部边界映射到外层泛波段通量甚至核心丰度诊断谱线上？</div>
+              <p class="qa-a"><strong>刘超回应：</strong>这一设想与代理模型的核心理念高度一致，但目标在于保留关键物理方程的<strong>“灰盒（Grey Box）”</strong>而非纯黑盒。<strong>符晓婷</strong>指出测总通量或热星等或许可行，精确测单元素丰度通常仍须解析特征谱线；Bressan 设想 AI 或可帮助识别决定丰度的最小关键谱线集合。</p>
+            </div>
+          </div>
+        </details>
+      </article>
+    </section>
+
+    <!-- 四、11月10日 下午场 -->
+    <section id="day1-pm" aria-labelledby="day1-pm-title">
+      <div class="section-heading">
+        <h2 id="day1-pm-title">五、11 月 10 日（Day 1）下午场详细纪要</h2>
+        <span class="section-tag">13:51–17:16 · 主持：符晓婷</span>
+      </div>
+
+      <!-- 报告 3 -->
+      <article class="talk-card" id="talk-3">
+        <div class="talk-header">
+          <div>
+            <h3 class="talk-title">报告 3：Mock CSST NUV-NIR imaging of TNG50 galaxies with resolved stellar populations</h3>
+            <p class="talk-speaker"><strong>报告人：</strong>汤静（Jing Tang，中国科学院国家天文台 NAOC） · <em>论文：Tang et al. 2026, A&amp;A accepted</em></p>
+          </div>
+          <div class="talk-header-right">
+            <a class="back-link" href="#matrix">↑ 分析表</a>
+            <span class="talk-pill">Day 1 PM</span>
+          </div>
+        </div>
+
+        <h4>报告主要内容小结</h4>
+        <p>报告面向 CSST 多波段高分辨成像（<code>PSF ~ 0.15"</code>、单次视场 <code>1.1 deg²</code>、主巡天 <code>17,500 deg²</code>，蓝超巨星探测有望延伸至 <code>~40 Mpc</code> 约 <code>10,000</code> 个星系），在实测数据到来前构建了端到端、物理自洽的近邻可分辨星系模拟成像与真值星表，用于检验拥挤星场测光与 SFH 反演误差。</p>
+        <ul>
+          <li><strong>目标星系与三步串联模拟管线</strong>：选取 <code>IllustrisTNG50</code> 面对面旋涡星系（<code>ID = 666210, M* = 7.35×10^9 M☉</code>，置于 <code>10 Mpc</code>，恰好落入单块 <code>9k×9k</code> 探测器）与类 WLM 矮不规则星系（<code>ID = 860672, M* = 5.367×10^7 M☉</code>，置于 <code>1 Mpc</code>）。流程包括：（1）用 <code>TRILEGAL</code>（<code>PARSEC v1.2S + COLIBRI + YBC</code>、<code>Chabrier</code> IMF、<code>30%</code> 非相互作用双星；参见 <a href="#talk-6">报告 6</a>）将模拟粒子抽样为可分辨亮星（分别约 <code>51.7 万</code>与 <code>77 万</code>颗），未分辨暗星与年轻星电离区/PDR 分别由 <code>BC03 (&gt;10 Myr)</code> 与 <code>MAPPINGS III (&lt;10 Myr)</code> 生成漫射背景光；（2）用 <code>SKIRT</code> 3D 辐射传输结合 <code>THEMIS</code> 尘埃模型计算逐星弥漫消光与诞生云消光；（3）接入 CSST 成像仿真器（论文阶段因新版 <code>WB/WI</code> PSF 尚未就绪采用 2025 版 7 波段 <code>NUV,u,g,r,i,z,y</code>），施加空间变化 PSF、天光、杂散光与仪器噪声。</li>
+          <li><strong>公开数据与后续测试</strong>：模拟图像与底层真值目录已公开发布于中国虚拟天文台（<a href="https://nadc.china-vo.org/s/101857" target="_blank" rel="noopener noreferrer">China-VO: nadc.china-vo.org/s/101857</a>），已完成 <code>SExtractor</code>、<code>Photutils</code> 及合作者开发的密集场 PSF 拟合与强制测光初步比对，后续将通过人工星注入（AST）定量分离混叠、双星与三维尘埃对 CMD-SFH 反演的影响。</li>
+        </ul>
+
+        <details class="qa-block" id="talk-3-qa" open>
+          <summary>报告后讨论内容（3 轮问答）</summary>
+          <div class="qa-content">
+            <div class="qa-item" id="talk-3-q1">
+              <div class="qa-q">Q1（现场与会专家）：为何只选 <code>10 Mpc</code> 旋涡星系和 <code>1 Mpc</code> 矮星系，而未模拟 <code>M31</code> 量级更大星系？算力瓶颈何在？</div>
+              <p class="qa-a"><strong>汤静回应：</strong><code>10 Mpc</code> 使星系盘面主体刚好落入单块 <code>9k×9k</code> 探测器不跨拼接缝；<code>1 Mpc</code> 对应 WLM 尺度矮星系。受空间变化 PSF 逐星卷积开销限制，模拟约 60 万颗恒星约需 60 小时（每 10 万星约 10 小时），<code>M31</code> 量级（约 10 倍质量）单次逐星卷积开销过高。</p>
+            </div>
+            <div class="qa-item" id="talk-3-q2">
+              <div class="qa-q">Q2（符晓婷提问；谢利智、汤静补充）：核区与外晕测光差异、半解析模型（SAM）能否用于同类模拟，以及新版 9 波段（<code>WB, WI, V</code>）影响？</div>
+              <p class="qa-a"><strong>回应：</strong>汤静指出外围稀疏区测光与普通场一致，难题集中在核球、旋臂与恒星形成区，且不同波段星表密度差异显著；待仿真团队更新 <code>WB, WI, V</code> 新版 PSF 后可迅速重跑。<strong>谢利智</strong>明确指出 SAM 缺乏真实二维/三维内部空间结构（旋臂、星团），更适合不可分辨星系总体统计而不宜做可分辨成像模拟。<strong>符晓婷</strong>提出可评估针对新版 9 波段与灵敏度提升更新 CSST 白皮书提案。</p>
+            </div>
+            <div class="qa-item" id="talk-3-q3">
+              <div class="qa-q">Q3（张智昱、Alessandro Bressan、符晓婷讨论）：漫射电离气体（DIG）与亚格子成团 ISM 对电离光与测光的影响？</div>
+              <p class="qa-a"><strong>讨论与建议：</strong><strong>张智昱</strong>指出真实星系中大量 <code>Hα</code> 光子来自 H II 区以外的漫射电离气体（DIG），汤静确认目前 <code>MAPPINGS III</code> 仅含 <code>&lt;10 Myr</code> 致密 H II 区与 PDR，尚未建入全盘 DIG。<strong>Bressan 教授 提出无需等待 CSST 即可开展的检验方案：</strong>对比面对面（face-on）与侧向（edge-on）盘星系的 <code>FIR/射电</code> SFR 与经 <code>Hβ/Hα</code> 改正后的 <code>Hα</code> SFR，以检验 DIG 占比。现场还讨论了将模块化流水线接入 <code>FIRE / COLIBRE</code> 高分辨 ISM 模拟，及以 <code>Orion</code> 等 3D 恒星形成区或 <code>CSST IFS</code>（<code>0.2"</code> 采样、<code>6"×6"</code> 视场、<code>350–1000 nm</code>）开展交叉校验。</p>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <!-- 报告 4 -->
+      <article class="talk-card" id="talk-4">
+        <div class="talk-header">
+          <div>
+            <h3 class="talk-title">报告 4：Bayesian Spectral Energy Distribution Analysis of Galaxies and Application in the CSST Wide-field Slitless Spectroscopy Survey</h3>
+            <p class="talk-speaker"><strong>报告人：</strong>韩云坤（Yunkun Han，中国科学院云南天文台 YNAO）</p>
+          </div>
+          <div class="talk-header-right">
+            <a class="back-link" href="#matrix">↑ 分析表</a>
+            <span class="talk-pill">Day 1 PM</span>
+          </div>
+        </div>
+
+        <h4>报告主要内容小结</h4>
+        <p>报告围绕高效多物理贝叶斯建模工具 <code>BayeSED3</code>（<code>ascl.net/2410.605</code>）评估了 CSST 多色测光与宽视场无缝光谱巡天对星系红移、物理参数反演及底层恒星演化星族库（SPS）的模型分辨能力。</p>
+        <ul>
+          <li><strong>方法与模拟框架</strong>：<code>BayeSED3</code> 集成多套 SPS 库、<code>CLOUDY</code> 星云发射、尘埃消光/再辐射及 AGN 成分，效率较 <code>Bagpipes</code> 提升 <code>10</code> 倍以上，并以贝叶斯证据（Bayesian Evidence）实现严格模型优选，还开发了支持 <code>GUI / HBI / SBI</code> 自动化工作流的 <code>BayeSED3-AI</code>。团队将 <code>BayeSED3</code> 与 CSST 无缝光谱模拟器 <code>CESS</code>（<code>Wen, Zheng, Han et al. 2024</code>）结合，在约 <strong><code>100,000</code> 个 DESI 匹配模拟星系</strong>上系统评测了 7 波段测光及 <code>GU, GV, GI</code> 无缝光谱的联合拟合表现。</li>
+          <li><strong>核心结论</strong>：（1）仅凭 CSST 7 波段测光时，模型假设与先验简并导致的系统误差已与观测噪声相当；（2）加入无缝光谱（即使连续谱/发射线低至 <code>SNR ≥ ~1</code>）可显著提升恒星形成星系（SFG）的测红移与参数精度（单波段排序为 <code>GI</code> 最佳、<code>GU</code> 最差，三波段联测配合 <code>SNR / σ_z ~ 20</code> 截断可兼顾完备性与精度，而 <code>z &gt; 0.5</code> 宁静星系因样本量少与信噪比低仍难收敛）；（3）层级贝叶斯检验（HBI）显示重度 TP-AGB 模型（<code>CB07, M05</code>）相对于 <code>BC03</code> 不受支持，双星演化在 SFG 与早型星系中均有显著贡献（<code>Yunnan-II</code> 优于 <code>BPASS v2.0</code>，新版本待补测），且 <code>Kroupa</code> IMF 整体优于 <code>Salpeter</code>。</li>
+        </ul>
+
+        <details class="qa-block" id="talk-4-qa" open>
+          <summary>报告后讨论内容（3 轮问答）</summary>
+          <div class="qa-content">
+            <div class="qa-item" id="talk-4-q1">
+              <div class="qa-q">Q1（Alessandro Bressan 提问；符晓婷补充）：是否应先在银河系/近邻球状星团（天然 SSP）上检验 <code>BayeSED3</code> 与各 SPS 模型？</div>
+              <p class="qa-a"><strong>韩云坤回应：</strong>认同在简单单星族上做基准定标具有重要意义，未来值得推进；目前层级贝叶斯架构主要面向不可分辨大样本星系，借群体统计优势判别模型。<strong>符晓婷补充实例：</strong><code>MILES</code> 作者每次更新模型都会先用球状星团 <code>47 Tuc</code> 校验；过去 <code>Padua 2000</code> 模型在主序拐点温度上存在约 <code>250 K</code> 偏差，而符晓婷与 Bressan 教授 更新后的恒星模型恰好移动了 <code>252 K</code> 与观测精确吻合。</p>
+            </div>
+            <div class="qa-item" id="talk-4-q2">
+              <div class="qa-q">Q2（现场与会专家、Bressan 教授、符晓婷追问）：云南双星模型对哪一波段最敏感？如何与“氦增丰单星解释椭圆星系紫外上翘（UV upturn）及与 <code>Mg₂</code> 正相关”相区分？</div>
+              <p class="qa-a"><strong>韩云坤回应：</strong>双星演化的热剥离星/蓝离散星主要贡献在<strong>紫外（UV）波段</strong>，团队正用 <code>GALEX</code> 近邻椭圆星系检验 UV excess 并已有研究生推进至 CSST 紫外波段。<strong>Bressan 教授</strong> 提醒椭圆星系 UV 占比仅约 <code>1%</code>，微小尘埃团块漏光即可强烈干扰解读，且 <code>Bressan+94</code> 曾用高金属丰度、氦增丰单星水平分支星重现了 UV upturn 与 <code>Mg₂</code> 的正相关，追问纯双星通道能否解释该相关性。<strong>符晓婷</strong>补充双星比例本身随金属丰度演化，未来可将新计算的氦增丰单星模型与双星模型联立接受 CSST 紫外观测检验。</p>
+            </div>
+            <div class="qa-item" id="talk-4-q3">
+              <div class="qa-q">Q3（郑宪忠提问）：CSST 无缝光谱的相邻天体色散重叠污染、流量定标理想化假设，以及 <code>z ~ 0.5–1</code> 宁静星系完备性异常的原因？</div>
+              <p class="qa-a"><strong>讨论与建议：</strong>针对无缝光谱对全视场像元同时色散造成的邻近天体叠加污染，<strong>郑宪忠建议</strong>充分利用 <strong>CSST 自身高分辨多色成像作为位置与形态先验</strong>，构建<strong>混合/联合贝叶斯模型</strong>对重叠区域多个天体同步解混拟合。韩云坤确认当前 <code>CESS</code> 模拟采用了理想流量定标，后续将引入定标残差，并澄清 <code>z &gt; 0.5</code> 宁静星系完备性异常系匹配的 DESI 样本在该红移段宁静星系极稀少、统计涨落严重所致。</p>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <!-- 报告 5 -->
+      <article class="talk-card" id="talk-5">
+        <div class="talk-header">
+          <div>
+            <h3 class="talk-title">报告 5：The Stellar Population &amp; Stellar Initial Mass Function of MASSIVE Galaxies</h3>
+            <p class="talk-speaker"><strong>报告人：</strong>顾梦（Meng Gu，清华大学 THU） · <em>关联工作：Gu et al. 2022; arXiv:2606.24032</em></p>
+          </div>
+          <div class="talk-header-right">
+            <a class="back-link" href="#matrix">↑ 分析表</a>
+            <span class="talk-pill">Day 1 PM</span>
+          </div>
+        </div>
+
+        <h4>报告主要内容小结</h4>
+        <p>报告聚焦极高质量早型星系（ETGs，<code>M* &gt; 10^11.5 M☉</code>, <code>D &lt; 108 Mpc</code>）核区及径向剖面上的恒星族群性质与低质量端初始质量函数（IMF）变化规律，并探讨了与 CSST 及下一代多设备巡天的协同前景。</p>
+        <ul>
+          <li><strong>数据、模型与方法</strong>：基于 <code>MASSIVE</code> 巡天 <code>41</code> 个大质量 ETGs 的 <code>Magellan/LDSS-3</code> 超高信噪比（<code>S/N &gt; 200/Å</code>, <code>0.4–1.0 µm</code>, <code>R ~ 3000</code>）长缝光谱，使用全光谱拟合代码 <code>alf</code>（<code>MILES + Extended IRTF</code> 经验库及备份拓展的 <code>XSL DR3</code>、<code>MIST v1.2</code> 等龄线并跟踪含 <code>α</code> 与自转的 <code>MIST v2.0</code>、19 种元素微分响应，经球状星团检验标定），联合拟合对表面重力高度敏感的 <code>Na I 8190 Å</code>、<code>Wing-Ford FeH 9916 Å</code> 相对于巨星 <code>Ca II</code> 三线系，同时约束 <code>α_IMF</code> 与各元素丰度。</li>
+          <li><strong>核心结论</strong>：（1）MASSIVE 星系最核心呈现比 <code>Salpeter</code> 更陡的底重（bottom-heavy）IMF；（2）由内向外（<code>1/16 Re</code> 至外区），<code>α_IMF</code>、<code>[Fe/H]</code> 与 <code>[Na/Fe]</code> 同步陡峭下降，而恒星年龄与 <code>[Mg/Fe]</code>、<code>[Si/Fe]</code> 径向保持平坦；（3）若忽略径向 IMF 变化而全盘采用 <code>Kroupa</code> IMF，将导致 <code>0.5 Re</code> 内恒星质量低估约 <code>1.8</code> 倍、<code>1 Re</code> 内低估约 <code>1.6</code> 倍（约 <code>40%</code>）；（4）<code>[Z/H]</code> 与 <code>α_IMF</code> 同步外降而 <code>[Mg/Fe]</code> 平坦，支持<strong>金属丰度</strong>更可能是主导低质量 IMF 空间变化的关键因素（定性趋势与 <code>Sharda &amp; Krumholz 2022</code> 模拟相符）。</li>
+        </ul>
+
+        <details class="qa-block" id="talk-5-qa" open>
+          <summary>报告后讨论内容（5 轮问答）</summary>
+          <div class="qa-content">
+            <div class="qa-item" id="talk-5-q1">
+              <div class="qa-q">Q1（郑宪忠）：<code>Sharda &amp; Krumholz (2022)</code> 的金属丰度依赖 IMF 模型适用于多高金属丰度或外区环境？</div>
+              <p class="qa-a"><strong>顾梦回应：</strong>现有分子云模拟尚未覆盖巨型椭圆星系形成全貌，但在局部云尺度上“金属丰度越低低质量端越平缓、越高越底重”的趋势与 MASSIVE 径向剖面定性一致。</p>
+            </div>
+            <div class="qa-item" id="talk-5-q2">
+              <div class="qa-q">Q2（现场与会专家、符晓婷、郑宪忠、顾梦）：动力学对比、干并合检验与光谱分辨率要求（引出 <code>CSST + MUST/JUST</code> 协同）？</div>
+              <p class="qa-a"><strong>讨论要点：</strong>顾梦澄清 <code>arXiv:2606.24032</code> 为纯全光谱 SPS 拟合（未含完整 Jeans 动力学）。针对测 IMF 要求分辨率优于星系内禀 <code>σ</code>，<strong>符晓婷与郑宪忠指出：CSST 无缝光谱（<code>R ~ 200</code>，参见 <a href="#talk-4">报告 4</a>）分辨率过低，无法直接测精细矮星吸收线</strong>；但 <strong>CSST 与 <code>MUST / JUST</code> 形成良好互补</strong>——由 CSST 凭 <code>0.15"</code> 成像大规模搜寻强引力透镜样本并测形态，交由 <code>MUST / JUST</code>（<code>R ~ 2500–5000</code>，蓝端灵敏度优）获取高信噪比吸收线光谱与内部动力学，构成“透镜 + 动力学 + SPS”联合约束。</p>
+            </div>
+            <div class="qa-item" id="talk-5-q3">
+              <div class="qa-q">Q3（Alessandro Bressan、符晓婷、现场专家）：高低质量段 IMF 解耦（“已演化大质量星 vs 现存低质量星”）、再恒星形成（rejuvenation）与质量敏感区间？</div>
+              <p class="qa-a"><strong>讨论要点：</strong><strong>Bressan 教授</strong> 指出平坦 <code>[Mg/Fe]</code> 与急降 <code>[Z/H]</code> 反对贫金属小星系干并合建造核区，且早期高红移快速增丰必然要求头重（top-heavy）IMF 再向晚期底重过渡；<strong>符晓婷</strong>总结道，<code>[Mg/Fe]</code> 反映早已演化的“大质量星（<code>&gt;8 M☉</code>）历史 IMF”，而近红外矮星吸收线探测“现存主序低质量星（<code>&lt;1 M☉</code>）”，二者可统一于随时间/金属丰度演化的 IMF 图像。现场还讨论了晚期微弱 <code>rejuvenation</code>（<code>Hβ</code>）对 SSP 的影响，及需明确 <code>Na I</code>/分子带究竟主要权重在 <code>~0.9 M☉</code> 拐点还是 <code>~0.1 M☉</code> M 矮星。</p>
+            </div>
+            <div class="qa-item" id="talk-5-q4">
+              <div class="qa-q">Q4（现场专家、Bressan 教授、顾梦、符晓婷）：经验谱库太阳邻域偏倚、理论分子带局限及 <code>LAMOST + Gaia</code> 建库建议？</div>
+              <p class="qa-a"><strong>讨论要点：</strong><code>MILES/E-IRTF</code> 在高金属丰度端缺高 <code>[α/Fe]</code> 星且极冷矮星稀少；<code>alf</code> 联合 <code>Na D</code>、<code>Na I 8190 Å</code>、<code>FeH</code> 与 <code>Ca II</code> 缓解 <code>[Na/Fe]</code> 简并；<strong>Bressan 教授</strong> 指出目前尚无理论大气能准确计算冷矮星复杂分子带，仍推荐窄带 Lick 指数。现场探讨利用 <code>LAMOST</code>（可达 <code>15–16 mag</code>）冷矮星光谱扩充经验库，<strong>符晓婷特别提醒切勿直接使用光谱自动化管线的 <code>log g</code>，须与 <code>Gaia</code> 视差/CMD 交叉证认标定</strong>。</p>
+            </div>
+            <div class="qa-item" id="talk-5-q5">
+              <div class="qa-q">Q5（现场专家）：强引力透镜与长缝 SPS 逐星系不一致的原因，以及“CSST 光学 + Euclid/Roman 近红外”测 IMF 前景？</div>
+              <p class="qa-a"><strong>顾梦回应：</strong>逐星系差异主要源于孔径失配（爱因斯坦半径远大于中心长缝）及近期再恒星形成。关于宽波段测光联测 IMF，顾梦表示已有规划推进结合光学与近红外（强调 <code>Roman K</code> 波段比 <code>Euclid H</code> 更敏感于冷矮星）联合反演非参数 SFH 与 IMF，实施关键在于严格做好跨望远镜 PSF 匹配与孔径对齐。</p>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <div class="note-box" id="day1-closing">
+        <strong>Day 1 闭幕综合讨论核心命题（现场与会专家 &amp; 符晓婷）：</strong>面向 CSST 多色成像（含 <code>NUV/u</code>）与 <code>R ~ 200</code> 无缝光谱配置，向恒星物理/谱库建模者与星系仿真团队共同提出两项研究任务：（1）厘清在 <code>R ~ 200</code> 吸收线被平滑条件下，<strong>不受模型误差主导的“最小关键星族可观测量”集合</strong>是什么；（2）利用已建成的端到端 Mock 数据集（汤静的 China-VO <code>TNG50</code> 数据 <a class="ref-link" href="#talk-3">报告 3</a> 与韩云坤的 <code>BayeSED3+CESS</code> 样本 <a class="ref-link" href="#talk-4">报告 4</a>）开展系统检验，定量划定 CSST 独立解析能力边界与必须依赖跨设备互补的区间。
+      </div>
+    </section>
+
+    <!-- 五、11月11日 上午场 -->
+    <section id="day2-am" aria-labelledby="day2-am-title">
+      <div class="section-heading">
+        <h2 id="day2-am-title">六、11 月 11 日（Day 2）上午场详细纪要</h2>
+        <span class="section-tag">09:30–12:00 · 主持：符晓婷</span>
+      </div>
+
+      <!-- 报告 6 -->
+      <article class="talk-card" id="talk-6">
+        <div class="talk-header">
+          <div>
+            <h3 class="talk-title">报告 6：TRILEGAL and YBC: population synthesis and stellar magnitudes across redshifts</h3>
+            <p class="talk-speaker"><strong>报告人：</strong>陈洋（Yang Chen，安徽大学 AHU）</p>
+          </div>
+          <div class="talk-header-right">
+            <a class="back-link" href="#matrix">↑ 分析表</a>
+            <span class="talk-pill">Day 2 AM</span>
+          </div>
+        </div>
+
+        <h4>报告主要内容小结</h4>
+        <p>报告承接前一日关于 <code>PARSEC</code> 恒星演化模型的介绍（参见 <a href="#talk-1">报告 1</a>），系统展示了面向 CSST 科学准备的星系恒星计数族群合成模型 <code>TRILEGAL</code> 与大样本恒星大气热改正库 <code>YBC</code> 及其转动拓展版 <code>rYBC</code>、高红移单星版 <code>zYBC</code>，实现从理论赫罗图到多波段巡天星表的端到端映射。</p>
+        <ul>
+          <li><strong>CSST 滤光片更新与 <code>CSST MSC</code> 全天模拟星表</strong>：对比 2025 与 2026 更新后的 CSST 9 条滤光片透过率曲线（<code>NUV,u,g,r,i,z,WB,WI,V</code>；<code>1.1 deg²</code> 视场、<code>17,500 deg²</code> 主巡天、<code>0.15"</code> PSF、深度约 <code>~26 mag</code>，<code>NUV ~ 25.5</code>、<code>V ~ 23</code>）。基于 <code>TRILEGAL</code> 构建全天 <code>CSST MSC</code>，量化低银纬银盘拥挤极限（<code>g ~ 24 mag</code>）以指导观测策略与河外前景星剔除，并展示 <code>M31 PHAT</code>、<code>LMC</code> 与疏散星团测试。</li>
+          <li><strong><code>YBC</code>（<code>Chen et al. 2019</code>，<code>Y</code> 指作者名 Yang Chen）与 <code>rYBC</code></strong>：整合 <code>ATLAS9/SYNTHE</code>、<code>PHOENIX</code>、<code>PoWR</code>、<code>Koester</code>、<code>Rauch</code> 等大气库，逐星在线卷积滤光片响应计算<strong>随 <code>T_eff</code> 与 <code>A_V</code> 非线性变化的精确消光 <code>A_λ</code></strong>；<code>rYBC</code> 则对转动扁椭球可视表面按倾角 <code>μ</code> 分微元面积加权积分 <code>(T_eff(θ), log g(θ))</code>，成功解释年轻/中等年龄星团的主序延展（eMSTO）与主序分裂。</li>
+          <li><strong><code>zYBC</code> 高红移引力透镜单星测光</strong>：精确处理 <code>(1+z)</code> K 改正并将宿主星系衰减（静止系 <code>λ/(1+z)</code>）与银河系前景消光（观测系 <code>λ</code>）明确分离；揭示红移使静止系紫外进入观测波段后 <code>color–T_eff</code> 呈现<strong>非单调性</strong>及对 <code>log g</code> 显著发散，因此一旦宿主红移已知，高红移单星的温度与表面重力约束反而可能更灵敏。</li>
+        </ul>
+
+        <details class="qa-block" id="talk-6-qa" open>
+          <summary>报告后讨论内容与茶歇交流（2 轮问答 + 茶歇技术补充）</summary>
+          <div class="qa-content">
+            <div class="qa-item" id="talk-6-q1">
+              <div class="qa-q">Q1（郑宪忠提问；陈洋、符晓婷、Bressan 教授、汤静联合讨论）：面对 <code>HST PHAT</code> 已观测过的 <code>M31</code> 等以年老星为主的近邻星系，CSST 在已分辨星族上能做出哪些“超越 HST”的新科学？</div>
+              <p class="qa-a"><strong>多方核心回应：</strong>（1）<strong>陈洋</strong>：CSST <code>1.1 deg²</code> 大视场可完整覆盖整个 <code>M31</code> 盘与外晕（HST 耗费大量曝光仅覆盖约 1/3），且多历元观测配合 <code>0.15"</code> 分辨率有望测出 <code>M31</code> 亮星<strong>自行与内部动力学</strong>；（2）<strong>符晓婷</strong>：全覆盖 <code>M31</code> 可直接与新发现的 <strong>M31 中性氢（<code>H I</code>）气泡/空洞</strong>联立研究恒星反馈与气体协同演化；（3）<strong>Bressan 教授</strong>：为避免 RGB 混杂而获得高时间分辨率 SFH，应利用 <code>2000–3500 Å</code> 紫外明亮、演化时标短且 <code>τ_He / τ_H</code> 确定的<strong>蓝环（Blue Loop）恒星</strong>追踪整星系恒星形成传播，正契合 CSST <code>NUV + u + g</code> 全视场观测；（4）<strong>汤静</strong>补充三方面不可替代性：联合 Bressan 教授 改进蓝红超巨星比理论模型、获得整星系空间分辨 SFH、首次为大样本近邻星系提供<strong>完全统一的 9 波段系统与均一深度</strong>（存档 HST 滤光片与深度差异显著）。</p>
+            </div>
+            <div class="qa-item" id="talk-6-q2">
+              <div class="qa-q">Q2（现场与会专家、符晓婷、Bressan 教授）：<code>YBC</code> 多大气库拼接边界效应、<code>[α/Fe]</code> 与富氦扩展，以及能否直接输出拼接好的 1D 光谱？</div>
+              <p class="qa-a"><strong>回应与核心建议：</strong>低温端与 <code>Gaia</code> 低质量主序 CMD 偏差在更换多种大气库拼接方案后仍存在，说明主因在恒星内部结构与外边界条件。<strong>符晓婷</strong>指出 PMO 团队正推进<strong>富氦恒星演化轨线（<code>PARSEC P</code>）</strong>，同时急需陈洋重算宽金属丰度 <strong><code>[α/Fe]</code> 增丰 <code>YBC</code></strong>，并建议未来结合 CSST <code>NUV/u</code> 与无缝光谱检验大质量热星风发射线模型。<strong>Bressan 教授 正式建议</strong> <code>YBC</code> <strong>直接向外输出已对齐拼接好的 1D 理论恒星光谱 <code>F_λ</code></strong>供星系 SPS 研究者自由积分任意 IMF；符晓婷与陈洋回应底层已完成一半，计划后续完成补算、软件封装与方法论文发布。</p>
+            </div>
+            <div class="qa-item" id="talk-6-tea">
+              <div class="qa-q">茶歇技术交流补充（双星网格缺口与 <code>rYBC</code> 转动大气近似算法）</div>
+              <p class="qa-a">茶歇期间讨论了双星网格在部分大质量星子阶段尚存缺口；陈洋并解释了 <code>rYBC</code> 的算法权衡：对不涉及极端动力学畸变的转动恒星采用一阶近似，将扁椭球表面按纬度离散为微元，直接从标准非转动大气网格插值局部 <code>(T_eff(θ), log g(θ))</code> 光谱并按视线投影 <code>μ</code> 加权积分，以兼顾精度与计算开销。</p>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <!-- 报告 7 -->
+      <article class="talk-card" id="talk-7">
+        <div class="talk-header">
+          <div>
+            <h3 class="talk-title">报告 7：The Star Formation History in Local Group Galaxies</h3>
+            <p class="talk-speaker"><strong>报告人：</strong>任逸（Yi Ren，齐鲁师范学院 QLNU）</p>
+          </div>
+          <div class="talk-header-right">
+            <a class="back-link" href="#matrix">↑ 分析表</a>
+            <span class="talk-pill">Day 2 AM</span>
+          </div>
+        </div>
+
+        <h4>报告主要内容小结</h4>
+        <p>报告系统介绍了利用近红外 CMD 拟合重建本星系群星系 SFH 的无模型去前景方法、1:1 星场图像注入模拟管线、在 9 个矮星系与 <code>M31</code> 中的科学发现，以及面向 CSST 与 JWST 的升级蓝图。</p>
+        <ul>
+          <li><strong>无模型去前景与图像级星场模拟管线（<code>Ren et al. 2021a,b; 2024</code>）</strong>：利用 <code>UKIRT</code> 近红外 <code>(J-H) vs (H-K)</code> 双色图中矮星 <code>H</code> 波段 <code>H₂O/CO</code> 吸收特征，无需银河系模型即可干净剔除前景矮星（保留 RSG、RHeB 与 RGB，覆盖 <code>10 Myr – 10 Gyr</code>）；结合 <code>PARSEC + COLIBRI</code>（含硅酸盐/碳尘埃 AGB、<code>Kroupa</code> IMF 与双星），提取实测图像背景与 PSF，将模拟星表直接注入真实科学图像再走完全相同的测光提取流程，最大化泊松似然比（PLR）反演 SFH。</li>
+          <li><strong>核心发现与面向空间巡天展望</strong>：在 9 个本星系群矮星系（<code>Khatamsar+2026 submitted</code>）中，首次定量发现 <code>NGC 6822</code> 近 <code>~35 Myr</code> 内 SFR 跃升近两个数量级（与 <code>H I</code> 潮汐臂约 <code>100 Myr</code> 时标及 YSO SFR 吻合）；在 <code>M31</code> 中首次完整捕获约 <strong><code>450 Myr</code> 前快速跃升 → 约 <code>50 Myr</code> 平台 → 衰减</strong>三段式全局 SFH 波形，结合流体碰撞模拟支持约数亿年前的 <code>M32–M31</code> 近迎头碰撞触发模型，且空间分布聚焦于 <code>10 kpc</code> 恒星形成环。展望 CSST（<code>~0.15"</code>）与 JWST，团队计划将高精度已分辨 CMD 反演拓展至 <strong><code>~40 Mpc</code></strong>，并利用空间稳定 PSF 提前构建<strong>预计算模拟 CMD 模型库</strong>。</li>
+        </ul>
+
+        <details class="qa-block" id="talk-7-qa" open>
+          <summary>报告后讨论内容与上午总结建议（7 轮问答）</summary>
+          <div class="qa-content">
+            <div class="qa-item" id="talk-7-q1">
+              <div class="qa-q">Q1（杨戟教授）：CMD 拟合相比其它 SFH 方法的优势何在？近期时间分辨率有多高？</div>
+              <p class="qa-a"><strong>任逸回应：</strong>CMD 直接解析单星光度与颜色，物理简并低于积分光谱/SED；年轻端依靠孤立明亮的红超巨星（RSGs）可达 <code>~10–100 Myr</code> 精细步长（<code>log t ≤ 7.0</code> 步长 <code>0.02</code>），古老端（<code>~10 Gyr</code>）受深度与等龄线交叠限制需用较宽分箱。</p>
+            </div>
+            <div class="qa-item" id="talk-7-q2">
+              <div class="qa-q">Q2（符晓婷）：如何区分真实星暴（SFH）与 IMF 变化？引入 CSST 更深光学波段能否打破该简并？</div>
+              <p class="qa-a"><strong>任逸回应：</strong>地面 <code>UKIRT</code> 浅场只覆盖演化亮星而必须固定 <code>Kroupa</code> IMF；若拥有 CSST 更深光学+近紫外空间观测同时覆盖低质量主序与亮超巨星，就具备直接区分 IMF 与 SFH 的潜力。</p>
+            </div>
+            <div class="qa-item" id="talk-7-q3">
+              <div class="qa-q">Q3（Alessandro Bressan 提出合作建议）：<code>log(t)</code> 对数分箱是否压低了老年龄爆发峰值？如何立即可行检验 CSST 对 IMF 的敏感性？</div>
+              <p class="qa-a"><strong>Bressan 教授 建议（符晓婷赞同）：</strong>（1）同步绘制<strong>累积恒星质量分数曲线</strong>消除对数坐标视觉误解；（2）直接利用任逸现有成熟图像模拟与拟合管线，接入 CSST 滤光片响应并<strong>手动改变输入 IMF 参数</strong>，定量检验反演 SFH 的系统偏移，适合作为本次研讨会产出的核心方法论文之一。</p>
+            </div>
+            <div class="qa-item" id="talk-7-q4">
+              <div class="qa-q">Q4（严志强、Bressan 教授、符晓婷、任逸）：随机抽样 vs <code>IGIMF</code>、多波段 SFR 示踪器隐含 IMF 冲突、化学丰度与 CSST <code>z/y</code> 波段 TRGB 定标？</div>
+              <p class="qa-a"><strong>讨论要点：</strong><strong>严志强</strong>指出矮星系阵发小爆发可能对应 <code>top-light</code> IMF，且 <code>Hα</code>/IR/UV 示踪器隐含固定大质量端 IMF，建议融入化学丰度；<strong>任逸</strong>表示融入精确 AMR 需靠 <code>CSST/JWST</code> 高精度测光，而单星光谱丰度需等未来 <code>ELT</code>。针对 <strong>Bressan 教授</strong> 关注 TRGB 金属丰度梯度，任逸展示团队已反演 <code>M31/M33</code> 二维 TRGB 金属丰度梯度；<strong>Bressan 教授 随即指出关键检验项：</strong>近红外 <code>K</code> 波段（<code>~2 µm</code>，如 JWST）对金属丰度不敏感，而 <strong>CSST 最长仅到 <code>z/y</code>（<code>~1 µm</code>）</strong>，亟需陈洋（<a href="#talk-6">报告 6</a>）与任逸核查 CSST <code>z/y</code> 波段上 TRGB 与碳星/多尘 AGB 的金属丰度敏感性。符晓婷补充该框架亦可约束星周尘埃产出率差异。</p>
+            </div>
+            <div class="qa-item" id="talk-7-q5">
+              <div class="qa-q">Q5（现场女学者）：年龄分箱（time bins）选取准则是什么？</div>
+              <p class="qa-a"><strong>回应：</strong>任逸按测光误差自适应分箱（<code>0.02 / 0.05 / 0.1</code>）防止过拟合且不平滑掉真实小星暴；<strong>符晓婷与 Bressan 教授</strong> 补充时间步长本质上受各年龄段可观测最大质量星演化寿命的物理极限约束。</p>
+            </div>
+            <div class="qa-item" id="talk-7-q6">
+              <div class="qa-q">Q6（现场另一位女学者提问；任逸与严志强解答）：大星系视线方向较差消光前后景几何与矮星系随机抽样 vs <code>IGIMF</code> 如何区分？</div>
+              <p class="qa-a"><strong>回应：</strong>任逸表示团队已利用 RGB 反演空间消光图做像元平均改正，但沿同一视线方向目前尚无法逐星区分云前与云后恒星，值得后续方法探索。<strong>严志强</strong>解答：在星系集成初始质量函数（<code>IGIMF</code>）框架下，观测表明星团最大恒星质量与星团质量紧密相关，星团质量上限受星系局部 SFR 表面密度自调节，因此物理上并非纯粹泊松随机抽样，已有简洁经验 <code>IGIMF</code> 描述可供模拟管线直接测试。</p>
+            </div>
+            <div class="qa-item" id="talk-7-q7">
+              <div class="qa-q">Q7（上午场总结倡议 — Alessandro Bressan &amp; 符晓婷）：以近邻星系为基准“合并检验已分辨 CMD 与未分辨积分光”</div>
+              <p class="qa-a"><strong>核心建议：</strong>已分辨 CMD 直接逐星计数测量 IMF 与 SFH，而未分辨星系积分光虽无法单星计数却包含所有未分辨暗星的累积光子。<strong>Bressan 教授 建议选取近邻星系同一天区</strong>，平行运行“CMD 逐星计数”与“整幅图像所有光子积分未分辨 SPS 反演”直接对比校验；<strong>符晓婷</strong>高度认同，指出近邻本星系群正是衔接已分辨与未分辨星族研究的理想桥梁。</p>
+            </div>
+          </div>
+        </details>
+      </article>
+    </section>
+
+    <!-- 六、11月11日 下午场及闭幕 -->
+    <section id="day2-pm" aria-labelledby="day2-pm-title">
+      <div class="section-heading">
+        <h2 id="day2-pm-title">七、11 月 11 日（Day 2）下午场与闭幕总结详细纪要</h2>
+        <span class="section-tag">13:55–17:30 · 主持：符晓婷</span>
+      </div>
+
+      <!-- 报告 8 -->
+      <article class="talk-card" id="talk-8">
+        <div class="talk-header">
+          <div>
+            <h3 class="talk-title">报告 8：SFH Reconstruction with a Simulation-informed Prior and the Nature of Environmental Quenching</h3>
+            <p class="talk-speaker"><strong>报告人：</strong>高泽宇（Zeyu Gao，北京大学物理学院天文学系 / KIAA） · <em>关联工作：Gao, Peng et al. 2025; Gao &amp; Peng 2026 in prep</em></p>
+          </div>
+          <div class="talk-header-right">
+            <a class="back-link" href="#matrix">↑ 分析表</a>
+            <span class="talk-pill">Day 2 PM</span>
+          </div>
+        </div>
+
+        <h4>报告主要内容小结</h4>
+        <p>报告提出以宇宙学流体动力学模拟作为物理先验的星系恒星形成历史（SFH）重建框架，仅凭多波段光学宽带测光即可高精度反演单星系 SFH、化学演化历史（CEH）与 <code>M/L</code>，并用于检验卫星星系环境猝灭的物理本质。</p>
+        <ul>
+          <li><strong>克服传统 SED 拟合年龄偏倚</strong>：针对年轻恒星淹没效应（outshining）与先验偏差——传统参数化 SFH（<code>tau</code>/delayed-<code>tau</code>/lognormal/double power-law）系统低估年龄约 <code>~50%</code>，而连续性非参数化 SFH（<code>Leja+19, Wang+15</code>）系统高估年龄约 <code>~50%</code>——直接采用 <code>IllustrisTNG</code> 模拟合成测光星表（<code>Nelson+18</code>: <code>FSPS + Padova + MILES</code> + 星云发射 + 诞生云与修正银河系尘埃消光）作为<strong>模拟信息先验</strong>，仅输入 <strong>SDSS <code>ugriz</code> 5 波段测光、光谱红移与光度</strong>即可反演后验物理演化轨迹。</li>
+          <li><strong>多重独立验证与稳健性</strong>：内禀自洽（<code>TNG → TNG</code>）<code>T50/T70/T90</code> 弥散约 <code>0.2 dex</code>、无偏差；跨模拟盲测（<code>TNG ↔ EAGLE</code>）弥散约 <code>0.3–0.4 dex</code>；仅靠光学测光反演的 SFH 可精确正向预测未参与拟合的 SDSS 光谱指标 <strong><code>D_n(4000)</code> 与 <code>Hδ_A</code></strong>；即便 <code>TNG</code> 本身在 <code>log M* ~ 10.5</code> 存在不物理的 AGN 阶跃跳变，观测选择权重仍能让方法恢复出平滑的 <code>MPA-JHU</code> 中心/卫星星系猝灭比例曲线。</li>
+          <li><strong>科学应用：环境猝灭物理机制（Continuous Suppression vs. Probabilistic Gating）</strong>：对比 SDSS 恒星形成星系在 <code>10^9–10^11 M☉</code>、不同局域密度 <code>log(1+δ_5)</code> 下的 <code>Hα</code> SFR 与 <code>T50</code>，观测呈现平坦/极弱环境依赖，<strong>支持概率门控（Probabilistic Gating）机制</strong>——卫星星系外层 <code>H I</code> 渐进被剥离而内盘 <code>H₂</code> 与恒星形成长期维持，直至落入星系团近心点遭遇强烈冲压剥离（RPS）或并合才快速猝灭。</li>
+        </ul>
+
+        <details class="qa-block" id="talk-8-qa" open>
+          <summary>报告后讨论内容与茶歇中文交流（5 轮问答 + 茶歇深度探讨）</summary>
+          <div class="qa-content">
+            <div class="qa-item" id="talk-8-q1">
+              <div class="qa-q">Q1（符晓婷）：<code>D_n(4000)</code> 可直接由 CSST 观测，且 CSST 多出紫外波段约束近期 SFH，是否已做过 CSST 模拟测试？</div>
+              <p class="qa-a"><strong>高泽宇回应：</strong>目前尚未在 CSST 模拟样本上测试，认同这是值得推进的后续方向。</p>
+            </div>
+            <div class="qa-item" id="talk-8-q2">
+              <div class="qa-q">Q2（Alessandro Bressan、符晓婷 与 现场 CSST 无缝光谱模拟学者）：CSST 无缝光谱分辨率对 <code>D4000</code> 的适用性及合作建议？</div>
+              <p class="qa-a"><strong>讨论与协同意向：</strong><strong>Bressan 教授 与符晓婷</strong>指出 <code>D4000</code> 是两侧连续谱比值，<strong>对低光谱分辨率极不敏感</strong>（契合 CSST 无缝光谱，参见 <a href="#talk-4">报告 4</a>），主要敏感于 <code>&gt;1 Gyr</code> 星族，但需注意双星演化（提升紫外压低 <code>D4000</code>）与 <code>[α/Fe]</code> 增丰（减弱蓝端 Fe 不透明度压低 <code>D4000</code>）。<strong>现场 CSST 无缝光谱模拟学者</strong>指出其当前的无缝光谱 SPS Mock 仍使用理想化的解析 <code>tau</code> SFH，建议采用<strong>高泽宇基于 <code>TNG</code> 先验生成的真实星系 SFH/CEH 库构建 CSST 无缝光谱模拟星表</strong>，以检验全谱贝叶斯恢复精度。</p>
+            </div>
+            <div class="qa-item" id="talk-8-q3">
+              <div class="qa-q">Q3（同位专家）：其它解析先验工作（如 <code>Prospector</code> 在 <code>GAMA 1/V_max</code> 上）在 <code>Lilly–Madau</code> 图上的表现？</div>
+              <p class="qa-a"><strong>高泽宇回应：</strong>援引 <code>Robotham (ProSpect)</code> 指出，联合建模物理自洽的 SFH 与化学演化历史（CEH）先验是消除宇宙质量积累系统偏离的关键。</p>
+            </div>
+            <div class="qa-item" id="talk-8-q4">
+              <div class="qa-q">Q4（Alessandro Bressan vs. 高泽宇学术讨论）：早型星系“引力势阱内禀决定论”与“环境触发猝灭”是否矛盾？</div>
+              <p class="qa-a"><strong>讨论要点：</strong><strong>Bressan 教授</strong> 结合其团队对约 40,000 个早型星系的归一化微分 Lick 指数研究指出，被动早型星系年龄几乎完全由速度弥散/质量决定而与 <code>δ_5</code> 无关。<strong>高泽宇</strong>一方面引用 <code>Peng+10</code> 红星系比例随 <code>δ_5</code> 单调上升，另一方面调出备用页中<strong>已猝灭（quiescent）星系的 <code>T50(δ)</code> 检验图</strong>：证明在“连续压制”与“概率门控”两种相反模型下，已猝灭星系的 <code>T50(δ)</code> 都会因内部与环境前身星系混叠而变平坦；因此<strong>具有鉴别力的检验样本必须是“仍在形成恒星的星系”而非已猝灭星系</strong>。</p>
+            </div>
+            <div class="qa-item" id="talk-8-q5">
+              <div class="qa-q">Q5（现场专家连续追问）：老年龄端（<code>6–9 Gyr+</code>）精度、质量依赖及 <code>T50 &gt; ~11.5–12 Gyr</code> 截断现象？</div>
+              <p class="qa-a"><strong>回应：</strong>双方与 Bressan 教授 共识低质量星系对星系团冲压剥离最敏感，而高红移（<code>z ~ 2</code>）大质量核心主要由内禀质量机制猝灭。针对 <code>T50 &gt; ~11.5–12 Gyr</code> 陡降，现场核对了宇宙年龄与回溯时间坐标映射，高泽宇解释这源于 <code>TNG</code> 该极老角落样本稀疏以及光学颜色自身对百亿年前极早星暴区分力趋于饱和。</p>
+            </div>
+            <div class="qa-item" id="talk-8-tea">
+              <div class="qa-q">茶歇中文技术交流（模型先验依赖边界）</div>
+              <p class="qa-a">现场专家指出该方法实质上是将观测数据投影到 <code>IllustrisTNG</code> 模板库，若 <code>TNG</code> 物理存在系统偏差，反演本身难以自发修正。高泽宇确认了这一前提边界：该方法显式以 <code>TNG</code> 轨迹集合统计合理为先验，借助实测颜色–光度分布进行观测选择筛选以避开局部非物理特征，未来可进一步接入多套模拟构建联合先验并结合 CSST 紫外–光学数据提升约束。</p>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <!-- 报告 9 -->
+      <article class="talk-card" id="talk-9">
+        <div class="talk-header">
+          <div>
+            <h3 class="talk-title">报告 9：Stellar population inference with neural network model AISO</h3>
+            <p class="talk-speaker"><strong>报告人：</strong>宛振（Zhen Wan，中国科学技术大学 USTC） · <em>注：正文与精度页完整型号为 <code>AISO 100</code></em></p>
+          </div>
+          <div class="talk-header-right">
+            <a class="back-link" href="#matrix">↑ 分析表</a>
+            <span class="talk-pill">Day 2 PM</span>
+          </div>
+        </div>
+
+        <h4>报告主要内容小结</h4>
+        <p>为缓解亿级恒星巡天时代海量单星及复合星族贝叶斯 MCMC 参数推断的计算速度瓶颈，报告人开发了基于 <code>PARSEC</code> 训练的傅里叶编码神经网络代理模型 <code>AISO 100</code>，在微秒级单星评估速度下保持毫星等（mmag）级复现精度。</p>
+        <ul>
+          <li><strong>网络架构与实测性能</strong>：输入 <code>[M/H]</code>、<code>log Age</code> 与 <code>M_ini</code> 分别经三支路<strong>傅里叶编码器</strong>展开并融合，单次前向调用同步输出 <strong>106 个巡天波段星等（含全部 CSST、Gaia、HST、JWST、LSST、Euclid、Roman、SDSS 等滤光片）</strong>、物理参数（<code>log L, log Teff, log g</code>）及演化阶段分类（剔除 <code>ΔM_ini ~ 10^-5–10^-6 M☉</code> 极快氦闪与极晚期 E-AGB）。在 <code>A800</code> GPU 上吞吐率达 <strong><code>27,000+ evaluation/s</code>（单星中位 <code>2.4 µs</code>）</strong>，普通 CPU 约慢 15 倍（<code>~500 stars/s</code>）；主流阶段测光残差约 <strong><code>2–3 mmag</code></strong>（<code>MS</code> 中位 <code>0.96 mmag</code>、召回率 <code>98.80%</code>；<code>RGB</code> 中位 <code>2.02 mmag</code>；整体偏差 <code>&lt; 10 mmag</code>）；<code>Gaia</code> 模拟星团 MCMC 恢复精度达 <code>Δlog10 Age = 1.99×10^-3 dex</code>、<code>Δ[M/H] = 1.86×10^-3 dex</code>。</li>
+          <li><strong>三项科学应用</strong>：（1）<code>LMC Gaia</code> 多族群连续抽样模拟，约 <strong><code>5 秒</code></strong> 生成 <code>100,000</code> 颗多波段合成星；（2）<code>ω Cen (NGC 5139)</code> <code>HST</code> 22 波段逐星反演，解析出多重金属丰度子群，与 <code>MUSE</code> 光谱对比弥散 <strong><code>Δ[M/H]_rms = 0.15</code></strong>，且呈现的 <strong><code>+0.30 dex</code> 系统零点偏移</strong>恰好对应训练集缺少 <code>ω Cen</code> 实测 <code>[α/Fe] ~ +0.3 dex</code> 的物理效应；（3）银心强较差消光疏散星团层级联合贝叶斯反演，嵌入<strong>陈阳发展的随温度变化非线性消光公式</strong>（参见 <a href="#talk-6">报告 6</a>），测得 <strong><code>R_V = 2.7</code></strong> 并获得清晰的去消光 CMD 与空间连续的<strong>二维尘埃消光分布图</strong>（相关论文已投稿）。</li>
+        </ul>
+
+        <details class="qa-block" id="talk-9-qa" open>
+          <summary>报告后讨论内容（4 轮问答）</summary>
+          <div class="qa-content">
+            <div class="qa-item" id="talk-9-q1">
+              <div class="qa-q">Q1（现场专家）：为何必须引入傅里叶编码器（Fourier Encoder）？</div>
+              <p class="qa-a"><strong>宛振回应：</strong>恒星演化在主序期极平缓而在 RGB 顶端与氦闪区极陡峭，常规 MLP 存在低频偏好；多频率正余弦傅里叶特征展开能让网络同时兼顾缓慢与高频剧变尺度。</p>
+            </div>
+            <div class="qa-item" id="talk-9-q2">
+              <div class="qa-q">Q2（Alessandro Bressan）：能否跳过等龄线预插值，直接基于约 50 条恒星演化轨线（tracks）训练？如何区分代理误差与观测误差？</div>
+              <p class="qa-a"><strong>宛振回应：</strong>当前模型严格在 <code>PARSEC</code> 参数包络内插值（绝不外推），赞同未来探索直接以演化轨线训练。目前 <code>AISO</code> 内禀 <code>~2–3 mmag</code> 误差已远低于常规巡天测光与定标系统误差。</p>
+            </div>
+            <div class="qa-item" id="talk-9-q3">
+              <div class="qa-q">Q3（符晓婷）：<code>AISO</code> 是直接预测星等还是先测 <code>(T_eff, log g)</code>？是否过度平滑了 <code>RGB bump</code>？何时补齐 <code>[α/Fe]</code>、氦丰度 <code>Y</code> 与自转？</div>
+              <p class="qa-a"><strong>宛振与符晓婷交流：</strong>宛振确认模型直接独立预测 106 个波段星等（底层依赖陈阳的 <code>YBC</code> 热改正表，参见 <a href="#talk-6">报告 6</a>），并同意专项核查 <strong>RGB bump（红巨星支隆起——约束对流超射与燃烧时标的物理时钟）</strong> 的保留锐度。符晓婷结合 <code>ω Cen</code> 至少存在 5 组以上富氦/不同金属丰度子群的事实提醒：缺少 <code>[α/Fe]</code> 与 <code>Y</code> 自由度易导致“拟合残差更小而物理参数反而系统偏离”，期待后续将富氦、<code>α</code> 增丰与转动网格纳入下一代 <code>AISO</code>。</p>
+            </div>
+            <div class="qa-item" id="talk-9-q4">
+              <div class="qa-q">Q4（现场光谱学专家）：普通笔记本 CPU 速率如何？推荐改用 <code>log(remaining time)</code> 改善极快晚期阶段精度</div>
+              <p class="qa-a"><strong>技术建议：</strong>宛振回应普通单核 CPU 约比 GPU 慢 15 倍（<code>~500 stars/s</code>）。该专家结合神经网络拟合光谱经验认同傅里叶编码的必要性，并建议参考已发表的演化轨线神经网络方法——<strong>将输入时间坐标从 <code>log(age)</code> 改为“剩余寿命对数” <code>log(remaining time)</code></strong>，从而在数学上展宽氦闪、RGB 顶端与晚期 E-AGB 阶段，提升拟合分辨率。宛振表示认可，计划开展测试验证。</p>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <!-- 报告 10 -->
+      <article class="talk-card" id="talk-10">
+        <div class="talk-header">
+          <div>
+            <h3 class="talk-title">报告 10：From Common Envelope to Luminous Red Novae</h3>
+            <p class="talk-speaker"><strong>报告人：</strong>陈卓（Zhuo Chen，清华大学高等研究院 IAS）</p>
+          </div>
+          <div class="talk-header-right">
+            <a class="back-link" href="#matrix">↑ 分析表</a>
+            <span class="talk-pill">Day 2 PM</span>
+          </div>
+        </div>
+
+        <h4>报告主要内容小结</h4>
+        <p>报告围绕共有包层演化（CEE）与高光度红新星（Luminous Red Novae, LRNe）的物理联系，结合 <code>V1309 Sco</code>、<code>AT 2019zhd</code> 及 <code>M31</code> 最新个案 <code>AT 2025abao</code>（<code>WFST + NEOWISE</code>，2025年11月爆发）的跨历元观测与自研 1D 辐射流体（<code>Guangqi</code>）和三维辐射转移（<code>RADMC-3D</code>）模拟，构建了 LRN 从前身星到主爆发的三阶段物理图景。</p>
+        <ul>
+          <li><strong>大量 LRN 实为恒星并合而非彻底共有包层抛射</strong>：LRN 光度介于经典新星与超新星之间跨越 4 个量级、持续 <code>20–400 天</code>。除经典主序并合原型 <code>V1309 Sco</code>（总质量 <code>~1.5 M☉</code>）外，对 <code>AT 2019zhd</code> 的 1D 光变拟合给出约 <code>~6 M☉</code> 前身星却仅抛射 <code>~0.04 M☉</code> 物质，同样指向并合事件。对 <code>M31</code> 的 <code>AT 2025abao</code>，依托历史存档刻画了：2004–2010 年大质量 AGB 前身星（<code>7 ± 2 M☉, log(L/L☉) = 4.2 ± 0.1, R = 350 ± 50 R☉</code>）→ 约 <strong>8 年持续中红外前兆增亮</strong> → <strong>爆发前光学暗降（dip）</strong> → 2025年11月主爆发冷却 SED。</li>
+          <li><strong>三阶段统一物理机制</strong>：（1）<strong>AGB 双星风洛希瓣溢流与轨道分叉</strong>：伴星引力聚焦尘埃星风形成赤道遮蔽盘与星周盘（吸积效率 <code>~30%</code>，形成 <code>CEMP-s / Ba</code> 星），并解释 <code>Gaia DR3</code> 在 <code>~600–700 天</code> 处的双星轨道周期双峰分叉；（2）<strong>风中引力曳力（Drag-in-the-wind）</strong>：用 <code>BHL</code> 曳力公式计算 <code>~22,000 L☉</code> 供能解释多年期前兆增亮，伴星扎入光学厚共有包层后因辐射与对流输运迟滞引发爆发前骤降；<code>MESA</code> 估算 <code>1.1 M☉</code> 质量损失与 <code>Guangqi</code> 贝叶斯反演的 <code>1.29×10^45 erg</code>、<code>~0.92 M☉</code> 抛射质量（约 <code>60%</code> 达逃逸速度）吻合；（3）<strong>氢复合前沿与负氢离子 <code>H^-</code> 辐射压加速</strong>：在 <code>T ~ 6000 → 3000 K</code> 复合前沿以内，束缚–自由/自由–自由及 <code>H^-</code> 不透明度高于汤姆孙电子散射 <code>&gt; 20 倍</code>（内电离壳层可达 <code>10^3–10^4 倍</code>），大幅拉低局地爱丁顿极限驱动超声速辐射压加速，外层 <code>T &lt; 3000 K</code> 转为透明 <code>TiO/VO</code> 分子冷流；灰体 <code>H^-</code> 模型已复现 <code>AT 2025abao</code> 在 <code>t = 20, 50.6, 76.2 天</code> 从 <code>~5000 K</code> 冷却至 <code>~3900 K</code> 的实测连续谱。</li>
+          <li><strong>巡天展望</strong>：指出 <strong>CSST + WFST（以及 <code>LSST + Roman</code>）</strong> 的深度成像与长基线监测协同，将有助于系统捕获更多 LRN 的早期前身星与多年期前兆事件。</li>
+        </ul>
+
+        <details class="qa-block" id="talk-10-qa" open>
+          <summary>报告后讨论内容（2 轮问答）</summary>
+          <div class="qa-content">
+            <div class="qa-item" id="talk-10-q1">
+              <div class="qa-q">Q1（Alessandro Bressan，符晓婷协助术语翻译）：高光学厚度近各向同性辐射场如何产生净向外加速？氢复合前沿与星际 <code>Strömgren</code> 球 / <code>H II</code> 区有何本质不同？</div>
+              <p class="qa-a"><strong>陈卓回应：</strong>（1）调出备用剖面图说明：当激波使外流超音速（<code>v &gt; c_s</code>）时，对流被显著抑制，热能转为纯辐射扩散向外输运，在 <code>H^-</code> 不透明度剧增处形成 <code>P_rad / P_grav &gt; 1</code>（<code>R_pe / R_H^- = 1.6</code>）的净向外辐射压推力；（2）普通星际 <code>H II</code> 区数密度仅约 <code>10^4–10^5 cm^-3</code>，而膨胀中的共有包层抛射物数密度高达 <strong><code>~10^13 cm^-3</code>（高出 8–9 个数量级）</strong>，极高碰撞频率使体系近似维持<strong>局部热动平衡（LTE）</strong>，无需采用稀薄星云 Case B 近似（仅最外层冷却稀疏区存在 <code>TiO/VO</code> 非灰体分子吸收）。</p>
+            </div>
+            <div class="qa-item" id="talk-10-q2">
+              <div class="qa-q">Q2（符晓婷）：LRN 在星系恒星族群中的发生频率有多高？常规单星族群合成（SSP）日常建模能否忽略？</div>
+              <p class="qa-a"><strong>陈卓回应与提醒：</strong>以 <code>M31</code> 为例，LRN 年均爆发率仅约 <strong><code>~1/yr</code></strong>，属于稀有瞬变事件，在整体星系积分光 SSP 中占比极微可以忽略；但与 <code>V1309 Sco</code> 同通道的<strong>相接双星并合</strong>会持续产生<strong>蓝离散星（blue stragglers）</strong>，在 CSST 观测的银河系及近邻星系已分辨星团 CMD 中不可忽视。</p>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <!-- 闭幕总结 -->
+      <div class="session-banner" id="day2-closing">
+        <h3>大会闭幕总结（Closing Remarks）</h3>
+        <span class="session-meta">发言人：符晓婷（会议主席）</span>
+      </div>
+
+      <div class="talk-card">
+        <p>会议主席<strong>符晓婷</strong>感谢全体报告人与参会学者两天来的学术贡献，指出本次研讨会系统衔接了已分辨恒星族群与未分辨河外星系族群、单双星演化物理、恒星形成历史重建及高速神经网络方法，形成了面向 CSST 科学准备与后续观测研究的协同共识。会后将组织整理会议纪要并就关键技术细节向各位报告人逐一核实，形成精简总结发给全体参会成员，鼓励青年学者向以 Alessandro Bressan 为代表的资深学者学习物理直觉，跨越星团、银河系、本星系群与高红移星系的子领域界线，共同推进 CSST 巡天数据获取前的模拟准备与后续科学研究。</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>“恒星星族研究与 CSST 科学机遇”学术研讨会 · 中国科学院紫金山天文台（PMO）</span>
+    <span>整理依据：2026年11月10–11日会议全程音视频记录</span>
+  </footer>
+
+  <script>
+    (function () {
+      var btn = document.getElementById('toggle-all-qa');
+      var blocks = Array.prototype.slice.call(document.querySelectorAll('details.qa-block'));
+      var allOpen = true;
+      if (btn) {
+        btn.addEventListener('click', function () {
+          allOpen = !allOpen;
+          blocks.forEach(function (d) { d.open = allOpen; });
+          btn.textContent = allOpen ? '折叠全部讨论' : '展开全部讨论';
+        });
+      }
+
+      function ensureTargetVisible(hash) {
+        if (!hash || hash.length < 2) return;
+        var target = document.getElementById(hash.slice(1));
+        if (!target) return;
+        var parentDetails = target.closest('details');
+        if (parentDetails && !parentDetails.open) {
+          parentDetails.open = true;
+        }
+      }
+
+      document.addEventListener('click', function (e) {
+        var link = e.target.closest('a[href^="#"]');
+        if (!link) return;
+        ensureTargetVisible(link.getAttribute('href'));
+      });
+
+      if (window.location.hash) {
+        ensureTargetVisible(window.location.hash);
+      }
+    })();
+  </script>
+</body>
+</html>
